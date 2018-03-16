@@ -1,0 +1,5992 @@
+.jackmail {
+	color: #444444;
+	font-family: "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+.jackmail textarea, .jackmail input, .jackmail select, .jackmail .dashicons {
+	font-size: 13px;
+}
+
+.jackmail_plugin,
+.jackmail_plugin #wpwrap.wp-responsive-open,
+.jackmail_plugin #post-body.metabox-holder.columns-1 {
+	overflow-x: visible !important;
+}
+
+.jackmail_plugin #wpcontent {
+	padding-left: 0 !important;
+	min-width: 1150px;
+}
+
+.jackmail_plugin #adminmenuback {
+	z-index: 10000;
+}
+
+.jackmail_plugin #adminmenuwrap {
+	z-index: 10001;
+}
+
+.jackmail_plugin #wpadminbar, .jackmail_plugin.auto-fold #adminmenuback {
+	position: fixed !important;
+}
+
+.jackmail_plugin.sticky-menu #adminmenuwrap {
+	position: relative !important;
+}
+
+.jackmail .jackmail_loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: transparent;
+	z-index: 1050;
+	cursor: wait;
+}
+
+.jackmail .jackmail_header_container {
+	height: 58px;
+}
+
+.jackmail .jackmail_header {
+	color: white;
+	position: fixed;
+	width: 100%;
+	height: 58px;
+	box-sizing: border-box;
+	left: 0;
+	z-index: 1002;
+}
+
+.jackmail .jackmail_header .jackmail_header {
+	margin-top: -39px;
+}
+
+.jackmail .jackmail_header > div:first-child {
+	background: #8fbb24;
+	padding: 10px;
+	height: 58px;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_header_buttons {
+	float: right;
+	padding-top: 1px;
+}
+
+.jackmail .jackmail_cursor_pointer {
+	cursor: pointer;
+}
+
+.jackmail input, .jackmail select {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.jackmail input:focus, .jackmail textarea:focus, .jackmail select:focus, .jackmail a:focus, .jackmail span[contenteditable], .jackmail *:focus {
+	box-shadow: none !important;
+	outline: none;
+	border-color: #dddddd;
+}
+
+.jackmail .jackmail_header_search_container {
+	margin-top: -11px;
+}
+
+.jackmail .jackmail_header_search {
+	cursor: pointer;
+	margin-right: 7px;
+}
+
+.jackmail .jackmail_header_search span {
+	margin-top: 19px;
+	display: inline-block;
+}
+
+.jackmail .jackmail_header_search .dashicons.dashicons-search {
+	font-size: 21px;
+	margin-right: 2px;
+	position: relative;
+	top: -2px;
+}
+
+.jackmail .jackmail_header_search_hide {
+	position: relative;
+	top: -11px;
+	right: -10px;
+	height: 58px;
+	width: 58px;
+	display: inline-block;
+	cursor: pointer;
+	background: #76972f;
+}
+
+.jackmail .jackmail_header_search_hide span {
+	font-size: 25px;
+	margin-left: 17px;
+	margin-top: 15px;
+}
+
+.jackmail input[type="button"], .jackmail a.jackmail_button {
+	background: #80a71f;
+	border: 1px solid #8a98a6;
+	border-radius: 3px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 1px;
+	box-sizing: border-box;
+	padding: 6px 15px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_button {
+	border: none;
+}
+
+.jackmail .jackmail_footer {
+	height: 55px;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_left > span,
+.jackmail .jackmail_footer > div > div.jackmail_footer_right > span {
+	background: #80a71f;
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+	padding: 20px 26px 26px;
+	transition: background 0.5s;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_left > span {
+	float: left;
+	padding-left: 16px;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_right > span {
+	float: right;
+	padding-right: 16px;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_left span.dashicons,
+.jackmail .jackmail_footer > div > div.jackmail_footer_right span.dashicons {
+	position: relative;
+	top: 3px;
+	width: auto;
+	height: auto;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_left > span:hover,
+.jackmail .jackmail_footer > div > div.jackmail_footer_right > span:hover {
+	background: #8fbb24;
+}
+
+.jackmail .jackmail_footer > div > div {
+	float: left;
+	min-height: 1px;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_left,
+.jackmail .jackmail_footer > div > div.jackmail_footer_right {
+	width: 20%;
+}
+
+.jackmail .jackmail_footer > div > div.jackmail_footer_middle {
+	width: 60%;
+}
+
+.jackmail .jackmail_footer_middle {
+	text-align: center;
+	padding-top: 20px;
+	color: #78848f;
+	height: 35px;
+}
+
+.jackmail .jackmail_footer_middle > div {
+	position: relative;
+	width: 400px;
+	margin: auto;
+	height: 35px;
+}
+
+.jackmail .jackmail_content {
+	padding: 20px 20px 0;
+}
+
+.jackmail .jackmail_installation_content_460 {
+	padding: 20px 20px 0;
+	width: 460px;
+	margin: auto;
+	text-align: center;
+}
+
+.jackmail .jackmail_settings_content_765 {
+	padding: 20px 20px 0;
+	width: 765px;
+	margin: auto;
+	text-align: center;
+}
+
+.jackmail .jackmail_text_right {
+	text-align: right;
+}
+
+.jackmail .jackmail_footer_middle span.jackmail_footer_active,
+.jackmail .jackmail_footer_middle span.jackmail_footer_inactive {
+	color: #78848f;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_footer_middle span.dashicons {
+	padding-bottom: 0;
+	padding-top: 3px;
+}
+
+.jackmail .jackmail_footer_middle span.jackmail_footer_active,
+.jackmail .jackmail_footer_middle span.jackmail_footer_inactive:hover {
+	color: #8fbb24;
+	transition: color 1s;
+}
+
+.jackmail .jackmail_footer_middle .jackmail_footer_active_border {
+	height: 4px;
+	background: #8fbb24;
+	width: 60px;
+	position: absolute;
+	left: 95px;
+	bottom: 0;
+	transition: .25s linear;
+}
+
+.jackmail .jackmail_header_button {
+	margin-left: 5px;
+	padding: 4px 18px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	background: #80a71f;
+}
+
+.jackmail .jackmail_dropdown_button_container {
+	position: relative;
+}
+
+.jackmail .jackmail_dropdown_button_container > div {
+	position: absolute;
+	top: 33px;
+	right: 0;
+	background: white;
+	border: 1px solid #ececec;
+	border-radius: 2px;
+	padding: 12px 0;
+	z-index: 1001;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_button_container_disabled .jackmail_dropdown_button {
+	background: #f1f1f1;
+}
+
+.jackmail .jackmail_dropdown_button_container > div * {
+	white-space: nowrap;
+	color: #2e3a49;
+}
+
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_file,
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_click,
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_select > span {
+	display: block;
+	padding: 10px 19px;
+	cursor: pointer;
+	font-size: 13px !important;
+	text-decoration: none;
+}
+
+.jackmail .jackmail_dropdown_button_container > div {
+	padding: 0;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_small_button > div > div > span {
+	padding: 2px 12px;
+}
+
+.jackmail .jackmail_header_button_menu > div.jackmail_dropdown_button_content > span {
+	padding: 8px 35px 8px 15px;
+}
+
+.jackmail .jackmail_header_button_menu > div > span:hover {
+	background: #8fbb24;
+	color: white;
+}
+
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_choice_selected,
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_file:hover,
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_click:hover,
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_select:hover > span,
+.jackmail .jackmail_dropdown_button_container > div > div > span:hover .jackmail_checkbox_title {
+	background: #8fbb24;
+	color: white !important;
+}
+
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_file {
+	position: relative;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_file input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_dropdown_button_border_container {
+	position: absolute;
+	top: -8px;
+	right: 0;
+	width: 100%;
+	height: 10px;
+	font-size: 12px;
+}
+
+.jackmail .jackmail_dropdown_button_container > div span.jackmail_dropdown_button_border_top {
+	padding: 0;
+	position: absolute;
+	right: 14px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #ececec;
+	cursor: default;
+}
+
+.jackmail .jackmail_dropdown_button_container > div span.jackmail_dropdown_button_border_top2 {
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	top: 1px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid white;
+	cursor: default;
+}
+
+.jackmail .jackmail_header span.dashicons.dashicons-menu {
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	color: white;
+	display: inline-block;
+	font-size: 21px;
+}
+
+.jackmail .jackmail_header span.jackmail_header_logo_container {
+	overflow: hidden;
+	display: inline-block;
+	height: 32px;
+	width: 90px;
+}
+
+.jackmail .jackmail_header span.jackmail_header_logo {
+	display: inline-block;
+	width: 120px;
+	height: 60px;
+	cursor: pointer;
+	background: url('../img/logo.svg') no-repeat top left;
+	background-size: 120px 60px;
+	position: relative;
+	top: -16px;
+	left: -13px;
+}
+
+.jackmail .jackmail_header_menu {
+	float: left;
+	width: 140px;
+	padding-top: 5px;
+	position: relative;
+	z-index: 1003;
+}
+
+.jackmail .jackmail_header_menu img {
+	cursor: pointer;
+	padding-bottom: 15px;
+	float: left;
+}
+
+.jackmail .jackmail_header_buttons > div {
+	float: left;
+}
+
+.jackmail .jackmail_header_buttons .jackmail_dropdown_button_container > div {
+	top: 40px;
+}
+
+.jackmail .jackmail_dropdown_button_left_container > div {
+	left: 0;
+	right: auto;
+}
+
+.jackmail .jackmail_dropdown_button_left_container > div span.jackmail_dropdown_button_border_top {
+	left: 14px;
+	right: auto;
+}
+
+.jackmail .jackmail_dropdown_button_left_container > div span.jackmail_dropdown_button_border_top2 {
+	left: 15px;
+	right: auto;
+}
+
+.jackmail .jackmail_name {
+	float: left;
+	padding-top: 9px;
+	color: white;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_campaign_header {
+	background: url('../img/user.png') no-repeat 15px 15px white;
+	padding: 0 15px 0 90px;
+}
+
+.jackmail .jackmail_campaign_header > span {
+	background: white;
+	white-space: nowrap;
+	right: 225px;
+	margin-top: 38px;
+	position: absolute;
+	padding: 0 12px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_header > span > span.jackmail_option_up_down span.dashicons {
+	padding-top: 3px;
+}
+
+.jackmail .jackmail_campaign_header > div {
+	margin: 0;
+	border-bottom: 1px solid #d0d1d8;
+	padding: 9px 0;
+	width: 100%;
+}
+
+.jackmail .jackmail_campaign_header .ng-hide-animate {
+	transition: all 0.5s;
+}
+
+.jackmail .jackmail_campaign_header .ng-hide-animate.ng-hide {
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	height: 0;
+}
+
+.jackmail .jackmail_campaign_header > div:last-child {
+	border-bottom: none;
+}
+
+.jackmail .jackmail_campaign_header > div > span {
+	padding-right: 5px;
+}
+
+.jackmail .jackmail_campaign_header span {
+	display: inline-block;
+}
+
+.jackmail .jackmail_campaign_header span.jackmail_right {
+	padding: 10px 0 10px 35px;
+	border-left: 1px solid #d0d1d8;
+	position: relative;
+	top: -4px;
+}
+
+.jackmail .jackmail_campaign_header .jackmail_content_editable {
+	border-bottom: 1px solid #ececec;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 1px solid transparent;
+	padding: 5px;
+	cursor: text;
+}
+
+.jackmail .jackmail_campaign_header .jackmail_content_editable:before {
+	content: "\200b";
+}
+
+.jackmail .jackmail_campaign_header .jackmail_content_editable:hover {
+	border-bottom: 1px solid rgba(143, 187, 36, 0.6);
+}
+
+.jackmail .jackmail_campaign_header .jackmail_content_editable:focus {
+	border: 1px solid #f1f1f1;
+	background: #fbfaf9;
+	border-radius: 2px;
+}
+
+.jackmail .jackmail_bold {
+	font-weight: bold;
+}
+
+.jackmail input[type="text"].jackmail_input_transparent {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+.jackmail input[type="button"].jackmail_input_transparent {
+	background: none;
+	border: none;
+}
+
+.jackmail .jackmail_name input[type="text"].jackmail_input_transparent {
+	color: white;
+	font-weight: bold;
+	height: 23px;
+}
+
+.jackmail .jackmail_name .jackmail_content_editable {
+	color: white;
+	font-weight: bold;
+	height: 23px;
+	min-width: 15px;
+	display: inline-block;
+}
+
+.jackmail .jackmail_name span.dashicons.dashicons-edit {
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
+
+.jackmail .jackmail_confirmation_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	z-index: 1003;
+}
+
+.jackmail .jackmail_confirmation_message {
+	position: fixed;
+	width: 500px;
+	border-radius: 5px;
+	padding: 30px 50px;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -133px;
+	z-index: 1003;
+	background: white;
+	color: #444444;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_confirmation_message.jackmail_confirmation_reconnection {
+	width: 430px;
+	height: auto;
+	margin-left: -205px;
+	margin-top: -170px;
+}
+
+.jackmail .jackmail_grid_container div.jackmail_grid_header {
+	background: #494d52;
+	color: white;
+	height: 27px;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.jackmail .jackmail_grid_container div.jackmail_grid_header .jackmail_targeting_display_hide {
+	padding-top: 4px;
+	float: left;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_grid_container div.jackmail_grid_header_lists {
+	height: 1px;
+	padding: 1px;
+	border-radius: 2px;
+	background: #494d52;
+}
+
+.jackmail .jackmail_dropdown_button_container .jackmail_button_checked,
+.jackmail .jackmail_dropdown_button_container .jackmail_button_not_checked {
+	margin-right: 9px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid input {
+	background: transparent;
+	box-shadow: none;
+	border: 1px solid transparent;
+	width: 100%;
+	color: #32373c;
+}
+
+.jackmail .jackmail_grid_contacts_container .jackmail_grid td {
+	padding: 10px !important;
+}
+
+.jackmail .jackmail_grid_contacts_container .jackmail_grid td.jackmail_column_selector {
+	padding: 15px !important;
+}
+
+.jackmail .jackmail_grid_contacts_container .jackmail_grid td input {
+	padding: 5px;
+}
+
+.jackmail .jackmail_grid_contacts_container .jackmail_grid td input:hover {
+	border-bottom: 1px solid #ececec;
+}
+
+.jackmail .jackmail_grid_contacts_container .jackmail_grid td input:focus {
+	border: 1px solid #f1f1f1;
+	background: #fbfaf9;
+	border-radius: 2px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email > input {
+	color: #80a71f;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email.jackmail_column_0_blacklisted {
+	position: relative;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email > span {
+	display: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	left: 2px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email > span.jackmail_column_0_blacklisted_1 {
+	background: #f3fc46;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email > span.jackmail_column_0_blacklisted_2 {
+	background: orange;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email > span.jackmail_column_0_blacklisted_3 {
+	background: #ef5353;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid_content .jackmail_column_0.jackmail_column_0_email.jackmail_column_0_blacklisted > span {
+	display: inline-block;
+}
+
+.jackmail .jackmail_hide_column_0 .jackmail_column_0,
+.jackmail .jackmail_hide_column_1 .jackmail_column_1,
+.jackmail .jackmail_hide_column_2 .jackmail_column_2,
+.jackmail .jackmail_hide_column_3 .jackmail_column_3,
+.jackmail .jackmail_hide_column_4 .jackmail_column_4,
+.jackmail .jackmail_hide_column_5 .jackmail_column_5,
+.jackmail .jackmail_hide_column_6 .jackmail_column_6,
+.jackmail .jackmail_hide_column_7 .jackmail_column_7,
+.jackmail .jackmail_hide_column_8 .jackmail_column_8,
+.jackmail .jackmail_hide_column_9 .jackmail_column_9,
+.jackmail .jackmail_hide_column_10 .jackmail_column_10 {
+	display: none;
+}
+
+.jackmail .jackmail_list_buttons {
+	background: #dedddd;
+	padding: 10px;
+}
+
+.jackmail .jackmail_list_buttons input {
+	background: #e8e8e8;
+	border: none;
+	color: grey;
+}
+
+.jackmail .jackmail_list_buttons input.jackmail_list_current {
+	color: #444444;
+}
+
+.jackmail .jackmail_display_none {
+	display: none;
+}
+
+.jackmail .jackmail_ptb_10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.jackmail .jackmail_inline_block {
+	display: inline-block;
+}
+
+.jackmail .jackmail_confirmation_edit {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_confirmation_edit > div:first-child {
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_confirmation_edit > div:last-child {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.jackmail .jackmail_confirmation_edit > div > div {
+	height: 22px;
+}
+
+.jackmail .jackmail_confirmation_edit input {
+	width: 100%;
+}
+
+.jackmail .jackmail_confirmation_edit_header > div {
+	height: 22px;
+}
+
+.jackmail .jackmail_title, .jackmail .jackmail_title * {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_center {
+	text-align: center;
+}
+
+.jackmail .jackmail_campaigns_action_container {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	margin-top: -115px;
+	top: 50%;
+}
+
+.jackmail .jackmail_import {
+	width: 965px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.jackmail .jackmail_import.jackmail_import_2_columns {
+	width: 730px;
+}
+
+.jackmail .jackmail_campaigns_action_container > div > div {
+	margin: auto;
+	width: 500px;
+}
+
+.jackmail .jackmail_campaigns_action > div, .jackmail .jackmail_import > div {
+	float: left;
+	width: 190px;
+	text-align: center;
+	margin: 0 25px;
+	height: 275px;
+	padding: 105px 10px 0 10px;
+	cursor: pointer;
+	border: 1px solid white;
+	box-shadow: 0 0 2px 0 #9b9b9b;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center 30px;
+	background-color: white;
+}
+
+.jackmail .jackmail_campaigns_action > div.jackmail_campaign_new_campaign {
+	background-image: url('../img/new_campaign.png');
+}
+
+.jackmail .jackmail_campaigns_action > div.jackmail_campaign_new_scenario {
+	background-image: url('../img/new_scenario.png');
+}
+
+.jackmail .jackmail_import > div.jackmail_import_list {
+	background-image: url('../img/import_list.png');
+}
+
+.jackmail .jackmail_import > div.jackmail_import_manual {
+	background-image: url('../img/import_manual.png');
+}
+
+.jackmail .jackmail_import > div.jackmail_import_copy_paste {
+	background-image: url('../img/import_copy_paste.png');
+}
+
+.jackmail .jackmail_import > div.jackmail_import_file {
+	background-image: url('../img/import_file.png');
+	position: relative;
+}
+
+.jackmail .jackmail_import > div.jackmail_import_file input {
+	height: 275px;
+	width: 190px;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaigns_action > div span, .jackmail .jackmail_import > div span {
+	font-weight: bold;
+	color: #8fbb24;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.jackmail .jackmail_campaigns_action > div, .jackmail .jackmail_import > div {
+	transition: border 1s;
+}
+
+.jackmail .jackmail_campaigns_action > div:hover, .jackmail .jackmail_import > div:hover {
+	border: 1px solid #8fbb24;
+}
+
+.jackmail .jackmail_campaigns_action > div:hover span, .jackmail .jackmail_import > div:hover span {
+	opacity: 1;
+}
+
+.jackmail .jackmail_import_list_selection .jackmail_import_list_selection_title {
+	margin-right: 15px;
+}
+
+.jackmail .jackmail_import_list_selection > div:first-child {
+	float: left;
+	width: 190px;
+	text-align: center;
+	border: 1px solid white;
+	height: 170px;
+	padding-top: 105px;
+	background: url('../img/import_list.png') no-repeat center 30px white;
+	position: absolute;
+}
+
+.jackmail .jackmail_import_list_selection > div:first-child span {
+	font-weight: bold;
+	color: #8fbb24;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_import_list_selection > div:last-child {
+	float: left;
+	background: white;
+	padding: 10px;
+	border-left: 1px solid #f7f8fa;
+	width: 100%;
+	padding-left: 200px;
+	box-sizing: border-box;
+	min-height: 277px;
+}
+
+.jackmail .jackmail_button_not_checked {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 2px solid #dddddd;
+	border-radius: 3px;
+	background: white;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.jackmail .jackmail_button_not_checked .dashicons.dashicons-yes {
+	color: #88c057;
+	font-size: 20px;
+	font-weight: normal;
+	position: relative;
+	left: -4px;
+	top: -2px;
+}
+
+.jackmail .jackmail_import_list_selector {
+	overflow-y: auto;
+	margin-bottom: 10px;
+}
+
+.jackmail .jackmail_import_list_selector > div {
+	overflow: hidden;
+	background: #f7f8fa;
+	border: 1px solid #f7f8fa;
+	margin-bottom: 2px;
+	border-radius: 2px;
+	margin-right: 5px;
+	transition: border 1s;
+}
+
+.jackmail .jackmail_import_list_selector > div:hover {
+	border: 1px solid #aeb0b2;
+}
+
+.jackmail .jackmail_import_list_selector > div > span {
+	float: left;
+	padding: 15px;
+}
+
+.jackmail .jackmail_import_list_selector > div > span.jackmail_import_list_name {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_import_list_selector > div > span.jackmail_import_list_selector_contacts {
+	padding-left: 0;
+	padding-right: 25px;
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+
+.jackmail .jackmail_import_list_selector > div > span.jackmail_import_list_details {
+	float: right;
+	color: #8fbb24;
+	cursor: pointer;
+	text-align: right;
+	width: 60px;
+}
+
+.jackmail .jackmail_import_list_selector > div > span.jackmail_import_list_details span.dashicons.dashicons-search {
+	font-size: 19px;
+	color: #7b7f82;
+}
+
+.jackmail .jackmail_import_list_selector > div > span.jackmail_import_list_details span:last-child:hover {
+	text-decoration: underline;
+}
+
+.jackmail .jackmail_uppercase {
+	text-transform: uppercase;
+}
+
+.jackmail .jackmail_grey {
+	color: #8a98a6;
+}
+
+.jackmail .jackmail_import_total {
+	overflow: hidden;
+	border-top: 1px solid #f7f8fa;
+	padding-top: 9px;
+	padding-right: 15px;
+}
+
+.jackmail .jackmail_import_total > span:first-child {
+	padding-left: 30px;
+}
+
+.jackmail .jackmail_import_total > span:last-child {
+	float: right;
+}
+
+.jackmail .jackmail_right {
+	float: right !important;
+}
+
+.jackmail .jackmail_left {
+	float: left !important;
+}
+
+.jackmail .jackmail_overflow_hidden {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_display_table {
+	display: table;
+	width: 100%;
+}
+
+.jackmail .jackmail_display_table_cell {
+	display: table-cell;
+}
+
+.jackmail .jackmail_display_table_cell_auto {
+	white-space: nowrap;
+}
+
+.jackmail input[type="button"] {
+	background: white;
+	color: #444444;
+	border: 1px solid #ececec;
+}
+
+.jackmail input.jackmail_white_button[type="button"] {
+	transition: border 1s;
+}
+
+.jackmail input.jackmail_white_button[type="button"]:hover {
+	border: 1px solid #8fbb24;
+}
+
+.jackmail .jackmail_mr_10 {
+	margin-right: 10px;
+}
+
+.jackmail .jackmail_info.dashicons.dashicons-info {
+	color: #d9d9d9;
+	height: 17px;
+	width: 17px;
+	font-size: 17px;
+	padding-left: 1px;
+	position: relative;
+	top: 1px;
+	transition: color .15s ease-in;
+}
+
+.jackmail .jackmail_info.dashicons.dashicons-info:hover {
+	color: grey;
+}
+
+.jackmail .jackmail_link {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_connect_account {
+	border-bottom: 1px dotted #8fbb24;
+	color: #444444;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.jackmail .jackmail_connect_account:hover {
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_pl_5 {
+	padding-left: 5px;
+}
+
+.jackmail .jackmail_check_campaign {
+	background: white;
+	width: 675px;
+	margin: auto;
+	padding: 15px;
+	border-radius: 1px;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_analysis {
+	min-height: 30px;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos > div {
+	overflow: hidden;
+	padding: 3px 0;
+	display: table;
+	position: relative;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos > div.jackmail_check_campaign_with_error span.jackmail_check_campaign_data > span:first-child {
+	display: none;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos > div:nth-child(even) {
+	background: #f7f8fa;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_error {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.jackmail .jackmail_check_campaign > div > span {
+	padding: 10px;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos > div > span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.jackmail .jackmail_check_campaign_title {
+	width: 125px;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_check_campaign_data {
+	width: 357px;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_max {
+	font-size: 19px;
+	margin-left: -10px;
+	color: #aaaaaa;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_bar_container {
+	position: relative;
+	height: 5px;
+	width: 600px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_bar1 {
+	width: 100%;
+	height: 5px;
+	background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ed7161, #63df3e);
+	position: absolute;
+	top: 0;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_bar2 {
+	height: 5px;
+	background: #cccccc;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_ok,
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_not_ok {
+	font-size: 50px;
+	line-height: 30px;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_ok {
+	color: #89c058;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_check_campaign_analysis_not_ok {
+	color: #ed7161;
+}
+
+.jackmail .jackmail_ckeck_campaign_button {
+	width: 92px;
+	text-align: right;
+}
+
+.jackmail .jackmail_icon_ok.dashicons.dashicons-yes,
+.jackmail .jackmail_icon_ok.dashicons.dashicons-no-alt {
+	border: 2px solid #999999;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	font-size: 19px;
+	padding-top: 1px;
+}
+
+.jackmail .jackmail_icon_ok.dashicons.dashicons-no-alt {
+	padding-left: 1px;
+}
+
+.jackmail .jackmail_icon_ok.dashicons.dashicons-yes {
+	color: #89c058;
+	padding-top: 2px;
+}
+
+.jackmail .jackmail_icon_ok.dashicons.dashicons-no-alt {
+	color: #ed7161;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_confirm_icon.dashicons.dashicons-yes,
+.jackmail .jackmail_confirm_icon.dashicons.dashicons-no-alt {
+	box-sizing: border-box;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 29px;
+	height: 30px;
+	width: 30px;
+	padding-top: 2px;
+	color: white;
+	margin: 0 7px;
+}
+
+.jackmail .jackmail_confirm_icon.dashicons.dashicons-yes {
+	background: #89c058;
+}
+
+.jackmail .jackmail_confirm_icon.dashicons.dashicons-no-alt {
+	background: #ed7161;
+}
+
+.jackmail .jackmail_check_campaign .jackmail_icon_ok.dashicons.dashicons-yes,
+.jackmail .jackmail_check_campaign .jackmail_icon_ok.dashicons.dashicons-no-alt {
+	margin-top: 4px;
+}
+
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos .jackmail_icon_ok.dashicons.dashicons-yes,
+.jackmail .jackmail_check_campaign.jackmail_check_campaign_infos .jackmail_icon_ok.dashicons.dashicons-no-alt {
+	margin-top: 0;
+}
+
+.jackmail .jackmail_check_campaign .ng-hide-animate,
+.jackmail .jackmail_check_campaign .ng-hide-animate p,
+.jackmail .jackmail_check_campaign .ng-hide-animate div {
+	transition: all 0.5s;
+}
+
+.jackmail .jackmail_check_campaign .ng-hide-animate.ng-hide,
+.jackmail .jackmail_check_campaign .ng-hide-animate.ng-hide p,
+.jackmail .jackmail_check_campaign .ng-hide-animate.ng-hide div {
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.jackmail .jackmail_pt_80 {
+	padding-top: 80px;
+}
+
+.jackmail .jackmail_pointer {
+	cursor: pointer;
+}
+
+.jackmail .jackmail_green {
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_test_campaign {
+	width: 450px;
+	border: 1px solid #ececec;
+	padding: 6px;
+	margin-left: 10px;
+	margin-right: 11px;
+	border-radius: 3px;
+}
+
+.jackmail span.jackmail_radio_checked,
+.jackmail span.jackmail_radio_unchecked {
+	text-align: center;
+	border: 1px solid #cbcacf;
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-block;
+	height: 13px;
+	margin-right: 5px;
+	padding-right: 0;
+	width: 13px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: white;
+}
+
+.jackmail span.jackmail_radio_checked::before {
+	border-radius: 4px;
+	content: "_";
+	display: inline-block;
+	height: 9px;
+	margin-top: 1px;
+	width: 9px;
+	background: #80a71f;
+}
+
+.jackmail .jackmail_send_campaign_option {
+	text-align: center;
+}
+
+.jackmail .jackmail_send_campaign_option > span {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_big_button_container {
+	text-align: center;
+	margin: 20px 0 10px;
+}
+
+.jackmail .jackmail_campaign_big_button_container.jackmail_campaign_scenario_big_button_container {
+	position: relative;
+}
+
+.jackmail .jackmail_campaign_big_button_container.jackmail_campaign_scenario_big_button_container span.dashicons {
+	position: relative;
+	top: 1px;
+	left: -5px;
+	color: grey;
+	background: white;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	padding: 0;
+	margin-left: 12px;
+	font-size: 16px;
+}
+
+.jackmail .jackmail_campaign_big_button_container.jackmail_campaign_scenario_big_button_container span.dashicons.dashicons-no-alt {
+	color: #ef5353;
+}
+
+.jackmail .jackmail_campaign_big_button_container.jackmail_campaign_scenario_big_button_container .jackmail_campaign_big_button {
+	padding-left: 5px;
+}
+
+.jackmail input[type="button"].jackmail_green_button:hover,
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_green_button:hover {
+	background: #80a71f;
+	color: white;
+	border: 1px solid #80a71f;
+}
+
+.jackmail input[type="button"].jackmail_green_button,
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_green_button {
+	transition: all 1s;
+}
+
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button {
+	font-size: 15px;
+	padding: 12px 20px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_green_button {
+	background: #8fbb24;
+	border: 1px solid #8fbb24;
+	color: white;
+}
+
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_red_button {
+	background: #ef5353;
+	border: 1px solid #ef5353;
+	color: white;
+}
+
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_green_button span.dashicons.dashicons-no-alt {
+	display: none;
+}
+
+.jackmail .jackmail_campaign_big_button_container .jackmail_campaign_big_button.jackmail_campaign_big_red_button span.dashicons.dashicons-yes {
+	display: none;
+}
+
+.jackmail input[type="button"].jackmail_green_button {
+	background: #8fbb24;
+	color: white;
+	border: 1px solid #8fbb24;
+	transition: all 1s;
+}
+
+.jackmail input[type="button"].jackmail_green_transparent_button {
+	background: transparent;
+	color: #8fbb24;
+	border: 1px solid #8fbb24;
+}
+
+.jackmail .jackmail_mb_50 {
+	margin-bottom: 50px;
+}
+
+.jackmail .jackmail_mb_100 {
+	margin-bottom: 100px;
+}
+
+.jackmail .jackmail_campaign_calendar {
+	border: 1px solid #ececec;
+	padding: 13px;
+	border-radius: 3px;
+	width: 400px;
+	background: white;
+	margin: 10px auto;
+	position: relative;
+	text-align: center;
+}
+
+.jackmail .jackmail_campaign_calendar .dashicons.dashicons-calendar-alt {
+	background: none;
+	width: 27px;
+	height: 26px;
+	border-left: 1px solid #d3d3d3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	color: #7b7f82;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_calendar > span {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 428px;
+	text-align: center;
+}
+
+.jackmail .jackmail_campaign_calendar > span select {
+	height: 21px;
+	line-height: 21px;
+	margin-right: 2px;
+}
+
+.jackmail .jackmail_name > span {
+	float: left;
+}
+
+.jackmail .jackmail_input_auto {
+	position: fixed;
+	z-index: -2;
+	top: -30px;
+}
+
+.jackmail .jackmail_input_auto span {
+	white-space: pre;
+}
+
+.jackmail .jackmail_import .jackmail_bold, .jackmail .jackmail_import_list_selection .jackmail_bold {
+	font-size: 14px;
+}
+
+.jackmail .jackmail_grid_buttons {
+	display: table;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.jackmail .jackmail_grid_buttons .jackmail_dropdown_button_container > div {
+	top: 37px;
+}
+
+.jackmail .jackmail_grid_buttons > div > input[type="button"] {
+	padding: 6px 16px;
+}
+
+.jackmail .jackmail_import_list_selection input[type="button"] {
+	padding: 5px 15px;
+	background: #f1f1f1;
+	color: #373737;
+	border: 1px solid #f1f1f1;
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.jackmail .jackmail_import_list_selection input[type="button"]:hover {
+	background: #f9f9f9;
+	border: 1px solid #f9f9f9;
+}
+
+.jackmail .jackmail_import_list_selection input[type="button"].jackmail_green_button {
+	color: white;
+	background: #80a71f;
+	border: 1px solid #80a71f;
+}
+
+.jackmail .jackmail_campaign_calendar_dropdown {
+	background: white;
+	border: 1px solid #ececec;
+	width: 200px;
+	position: absolute;
+	bottom: 26px;
+	left: 106px;
+	padding: 7px;
+	border-radius: 3px;
+}
+
+.jackmail .jackmail_campaign_calendar_dropdown select {
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_campaign_calendar_days {
+	overflow: hidden;
+	padding: 5px 0;
+	height: 168px;
+}
+
+.jackmail .jackmail_campaign_calendar_time {
+	padding-bottom: 8px;
+	width: 399px;
+	padding-top: 10px;
+	border-top: 5px solid white;
+	background: #f3f4f8;
+}
+
+.jackmail .jackmail_campaign_calendar_period p {
+	margin-top: 0;
+	margin-bottom: 7px
+}
+
+.jackmail .jackmail_campaign_calendar_period .jackmail_dropdown_button_container {
+	margin: auto;
+	width: 87px;
+	text-align: right;
+}
+
+.jackmail .jackmail_campaign_calendar_period .jackmail_dropdown_button_container > div > div.jackmail_dropdown_button_content > span {
+	padding: 4px 10px;
+}
+
+.jackmail .jackmail_campaign_calendar_period .jackmail_dropdown_button_container > div {
+	width: 70px;
+}
+
+.jackmail .jackmail_campaign_calendar_day, .jackmail .jackmail_campaign_calendar_day_selected, .jackmail .jackmail_campaign_calendar_day_in {
+	float: left;
+	padding: 4px;
+	margin: 1px;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #444444;
+	width: 18px;
+}
+
+.jackmail .jackmail_campaign_calendar_day_selected {
+	background: #8fbb24;
+	color: white;
+}
+
+.jackmail .jackmail_campaign_calendar_day_in {
+	background: #d5d6d8;
+}
+
+.jackmail .jackmail_campaign_calendar_day_disabled {
+	cursor: default;
+	color: #8a98a6;
+}
+
+.jackmail .jackmail_campaign_calendar_display {
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.jackmail .jackmail_logo {
+	background: url('../img/jackmail_logo.svg') no-repeat center center;
+	background-size: 80px 80px;
+	height: 60px;
+}
+
+.jackmail .jackmail_installation_step {
+	height: 11px;
+	margin-bottom: 20px;
+}
+
+.jackmail .jackmail_installation_step_border {
+	position: absolute;
+	border: 1px solid #ccd1d9;
+	width: 460px;
+	top: 24px;
+}
+
+.jackmail .jackmail_installation_step_1, .jackmail .jackmail_installation_step_2, .jackmail .jackmail_installation_step_3, .jackmail .jackmail_installation_step_4 {
+	background: #ccd1d9;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 5px;
+	top: 20px;
+}
+
+.jackmail .jackmail_installation_step_1 {
+	left: 103px;
+}
+
+.jackmail .jackmail_installation_step_2 {
+	left: 196px;
+}
+
+.jackmail .jackmail_installation_step_3 {
+	left: 288px;
+}
+
+.jackmail .jackmail_installation_step_4 {
+	left: 380px;
+}
+
+.jackmail .jackmail_installation_step_current {
+	background: #8fbb24;
+}
+
+.jackmail .jackmail_installation_steps {
+	font-size: 22px;
+	color: #8fbb24;
+	letter-spacing: -2px;
+	margin-top: 30px;
+	position: relative;
+}
+
+.jackmail .jackmail_installation_plugins {
+	text-align: left;
+	margin-top: 40px;
+}
+
+.jackmail .jackmail_installation_plugins > div {
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.jackmail .jackmail_installation_plugins .jackmail_settings_selector {
+	float: left;
+	width: 30px;
+}
+
+.jackmail .jackmail_installation_plugins .jackmail_settings_description {
+	float: left;
+	width: 430px;
+}
+
+.jackmail .jackmail_installation_plugins .jackmail_settings_description p {
+	margin: 0;
+}
+
+.jackmail .jackmail_settings_login {
+	text-align: left;
+}
+
+.jackmail .jackmail_settings_login input[type="text"], .jackmail .jackmail_settings_login input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.jackmail .jackmail_installation_content_460 input[type="button"],
+.jackmail .jackmail_settings_login input[type="button"] {
+	padding: 10px 20px;
+}
+
+.jackmail .jackmail_installation_content_460 input[type="text"],
+.jackmail .jackmail_installation_content_460 input[type="password"] {
+	background: white !important;
+}
+
+.jackmail .jackmail_settings_login_back {
+	color: #8fbb24;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_settings_login_back span.dashicons.dashicons-arrow-left-alt2 {
+	position: relative;
+	top: 3px;
+}
+
+.jackmail .jackmail_mt_40 {
+	margin-top: 40px;
+}
+
+.jackmail .jackmail_mh_360 {
+	min-height: 360px;
+}
+
+.jackmail .jackmail_w_185 {
+	width: 185px;
+}
+
+.jackmail .jackmail_m_auto {
+	margin: auto;
+}
+
+.jackmail .jackmail_align_left {
+	text-align: left;
+}
+
+.jackmail .jackmail_campaigns_header {
+	background: white;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_campaigns_header > div {
+	width: 50%;
+	box-sizing: border-box;
+	padding-left: 135px;
+	height: 71px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaigns_header > div:last-child {
+	background: url('../img/new_campaign.png') no-repeat 45px center;
+	border-right: 1px solid #f1f1f1;
+	float: right;
+	width: 455px;
+}
+
+.jackmail .jackmail_campaigns_header > div:first-child {
+	background: url('../img/new_scenario.png') no-repeat 45px center;
+	float: right;
+}
+
+.jackmail .jackmail_campaigns_header p {
+	margin: 0;
+}
+
+.jackmail .jackmail_campaigns_header .jackmail_bold {
+	font-size: 14px;
+}
+
+.jackmail .jackmail_campaigns_header .jackmail_pointer {
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_previews_grid_container > div {
+	margin: auto;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div {
+	float: left;
+	padding: 10px;
+	width: 240px;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div {
+	width: 100%;
+	min-height: 238px;
+	max-height: 450px;
+	border: 1px solid #d5d6d8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div span.jackmail_previews_grid_preview {
+	background: url('../img/no_preview.png') no-repeat top center;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div img {
+	display: block;
+	border-radius: 3px;
+	width: 100%;
+	background: white;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #383838;
+	z-index: 1;
+	color: white;
+	opacity: 0;
+	transition: opacity 1s;
+	box-sizing: border-box;
+	border: 1px solid #8fbb24;
+	border-radius: 3px;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div > div > div > p {
+	color: white;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div:hover > div {
+	opacity: 1;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div > div > div {
+	color: white;
+	width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.jackmail .jackmail_previews_grid_preview {
+	overflow: hidden;
+	min-height: 238px;
+	max-height: 446px;
+	display: block;
+}
+
+.jackmail .jackmail_previews_grid_column_campaign_draft {
+	border-top: 3px solid #9ccb3b !important;
+}
+
+.jackmail .jackmail_previews_grid_column_campaign_sent,
+.jackmail .jackmail_previews_grid_column_campaign_actived {
+	border-top: 3px solid #199cd8 !important;
+}
+
+.jackmail .jackmail_previews_grid_column_campaign_process_scheduled,
+.jackmail .jackmail_previews_grid_column_campaign_scheduled {
+	border-top: 3px solid #f5813c !important;
+}
+
+.jackmail .jackmail_previews_grid_column_campaign_process_sending,
+.jackmail .jackmail_previews_grid_column_campaign_sending {
+	border-top: 3px solid #6661ab !important;
+}
+
+.jackmail .jackmail_previews_grid_column_campaign_refused,
+.jackmail .jackmail_previews_grid_column_campaign_error {
+	border-top: 3px solid #df505f !important;
+}
+
+.jackmail .jackmail_thumbnail_campaign_draft,
+.jackmail .jackmail_thumbnail_campaign_sent,
+.jackmail .jackmail_thumbnail_campaign_actived,
+.jackmail .jackmail_thumbnail_campaign_process_scheduled,
+.jackmail .jackmail_thumbnail_campaign_scheduled,
+.jackmail .jackmail_thumbnail_campaign_process_sending,
+.jackmail .jackmail_thumbnail_campaign_sending,
+.jackmail .jackmail_thumbnail_campaign_refused,
+.jackmail .jackmail_thumbnail_campaign_error {
+	border-radius: 3px;
+	color: white;
+	padding: 6px 11px;
+}
+
+.jackmail .jackmail_thumbnail_campaign_draft {
+	background: #9ccb3b;
+}
+
+.jackmail .jackmail_thumbnail_campaign_sent,
+.jackmail .jackmail_thumbnail_campaign_actived {
+	background: #199cd8;
+}
+
+.jackmail .jackmail_thumbnail_campaign_process_scheduled,
+.jackmail .jackmail_thumbnail_campaign_scheduled {
+	background: #f5813c;
+}
+
+.jackmail .jackmail_thumbnail_campaign_process_sending,
+.jackmail .jackmail_thumbnail_campaign_sending {
+	background: #6661ab;
+}
+
+.jackmail .jackmail_thumbnail_campaign_refused,
+.jackmail .jackmail_thumbnail_campaign_error {
+	background: #df505f;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span .jackmail_checkbox_title {
+	color: white;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-top: 2px;
+	border-radius: 2px;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(1) .jackmail_checkbox_title {
+	background: #9ccb3b;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(2) .jackmail_checkbox_title {
+	background: #199cd8;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(3) .jackmail_checkbox_title {
+	background: #f5813c;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(4) .jackmail_checkbox_title {
+	background: #6661ab;
+}
+
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(5) .jackmail_checkbox_title,
+.jackmail .jackmail_campaign_status_select .jackmail_dropdown_button_content > span:nth-child(6) .jackmail_checkbox_title {
+	background: #df505f;
+}
+
+.jackmail .jackmail_previews_grid_container > div > div > div > div > div > p:first-child {
+	font-size: 15px;
+}
+
+.jackmail .jackmail_previews_grid_container p {
+	margin: 0;
+	overflow: visible;
+}
+
+.jackmail .jackmail_previews_grid_container p.jackmail_previews_grid_title span.jackmail_content_editable {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	background: none;
+	border: none;
+	color: white;
+	text-align: center;
+}
+
+.jackmail .jackmail_previews_grid_container p.jackmail_previews_grid_title .dashicons {
+	position: relative;
+	top: 4px;
+}
+
+.jackmail .jackmail_previews_grid_container {
+	display: table;
+	width: 100%;
+}
+
+.jackmail .jackmail_previews_grid_container p.jackmail_previews_grid_status {
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.jackmail .jackmail_previews_grid_container .jackmail_campaign_confirmation_message {
+	margin-bottom: 25px;
+	padding: 0 30px;
+	display: block;
+	font-weight: normal;
+}
+
+.jackmail .jackmail_previews_selector {
+	display: table;
+	margin: auto auto 30px;
+}
+
+.jackmail .jackmail_previews_selector > div > span,
+.jackmail .jackmail_previews_selector > div.jackmail_grid_columns_button {
+	padding-right: 12px;
+}
+
+.jackmail .jackmail_grid_container div.jackmail_grid_header div.jackmail_dropdown_button_container > div {
+	top: 32px;
+}
+
+.jackmail .jackmail_previews_selector .jackmail_campaign_calendar, .jackmail .jackmail_statistics_filter .jackmail_campaign_calendar {
+	margin: 0;
+	width: 200px;
+	text-align: center;
+}
+
+.jackmail .jackmail_previews_selector .jackmail_campaign_calendar_display, .jackmail .jackmail_statistics_filter .jackmail_campaign_calendar_display {
+	width: 200px;
+	padding-right: 25px;
+}
+
+.jackmail .jackmail_statistics_filter .jackmail_campaign_calendar.jackmail_campaign_calendar_compare,
+.jackmail .jackmail_statistics_filter .jackmail_campaign_calendar_compare .jackmail_campaign_calendar_display {
+	width: 400px;
+}
+
+.jackmail .jackmail_calendar_display {
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.jackmail .jackmail_calendar_display > span > span > span {
+	margin: 0 3px;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_months {
+	background: #494c51;
+	color: white;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_months span.jackmail_calendar_month_previous {
+	float: left;
+	cursor: pointer;
+	width: 13px;
+	text-align: left;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_months span.jackmail_calendar_month_next {
+	float: right;
+	cursor: pointer;
+	width: 13px;
+	text-align: right;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_week {
+	background: #494c51;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_week span {
+	background: #494c51;
+	color: white;
+	width: 18px;
+	float: left;
+	padding: 5px;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_campaign_calendar_week_day {
+	visibility: hidden;
+}
+
+.jackmail .jackmail_calendar_dropdown {
+	background: white;
+	border: 1px solid #ececec;
+	width: 606px;
+	position: absolute;
+	right: 0;
+	border-radius: 3px;
+	z-index: 1001;
+	padding: 8px 12px;
+}
+
+.jackmail .jackmail_calendar_dropdown.jackmail_calendar_simple {
+	width: 400px;
+}
+
+.jackmail .jackmail_calendar_dropdown > div:first-child > div > div.jackmail_calendar_content {
+	width: 196px;
+	float: left;
+	background: #f3f4f8;
+	margin: 7px;
+}
+
+.jackmail .jackmail_calendar_dropdown.jackmail_calendar_simple > div > div:last-child div.jackmail_calendar_content {
+	margin-right: 0;
+}
+
+.jackmail .jackmail_calendar_dropdown > div:first-child > div > div.jackmail_calendar_content:nth-child(odd) {
+	margin-left: 0;
+}
+
+.jackmail .jackmail_calendar_dropdown .jackmail_calendar_period_title {
+	padding-top: 5px;
+	font-weight: bold;
+	clear: both;
+}
+
+.jackmail .jackmail_calendar_dropdown select {
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_calendar_dropdown_position_top {
+	bottom: 26px;
+}
+
+.jackmail .jackmail_calendar_dropdown_position_bottom {
+	top: 29px;
+}
+
+.jackmail .jackmail_campaign_calendar_periods {
+	width: 196px;
+	overflow-y: auto;
+	height: 130px;
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	margin: auto;
+	margin-top: 4px;
+	margin-bottom: 7px;
+}
+
+.jackmail .jackmail_campaign_calendar_periods.jackmail_campaign_calendar_periods_compare {
+	height: 100px;
+}
+
+.jackmail .jackmail_calendar_multiple_right.jackmail_calendar_multiple_right_comparing {
+	margin-top: 23px;
+}
+
+.jackmail .jackmail_calendar_multiple_right.jackmail_calendar_multiple_right_comparing .jackmail_campaign_calendar_periods {
+	height: 219px;
+	margin-bottom: 30px;
+}
+
+.jackmail .jackmail_calendar_multiple_buttons {
+	margin-top: 8px;
+	height: 22px;
+}
+
+.jackmail .jackmail_calendar_multiple_buttons span {
+	background: #8fbb24;
+	color: white;
+	border-radius: 3px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_calendar_periods > div > div {
+	padding: 2px;
+	margin-bottom: 1px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_calendar_periods > div > div:hover,
+.jackmail .jackmail_campaign_calendar_periods .jackmail_campaign_calendar_selected_period {
+	background: #f3f4f8;
+}
+
+.jackmail .jackmail_calendar_multiple_left {
+	float: left;
+	width: 410px;
+}
+
+.jackmail .jackmail_calendar_multiple_right {
+	float: right;
+	width: 196px;
+	margin-top: 7px;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates {
+	margin-top: 15px;
+	height: 30px;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates > span {
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ececec;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates > span:first-child {
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates > span.jackmail_calendar_multiple_right_date_selected {
+	border: 1px solid #8fbb24;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates > span > span {
+	margin: 1px;
+}
+
+.jackmail .jackmail_calendar_multiple_right_dates * {
+	cursor: pointer;
+}
+
+.jackmail .jackmail_statistics_container {
+	background: white;
+	padding: 20px;
+}
+
+.jackmail .jackmail_statistics_recipients .jackmail_statistics_number_principal {
+	color: #254872;
+}
+
+.jackmail .jackmail_statistics_clicks .jackmail_statistics_number_principal {
+	color: #abbf06;
+}
+
+.jackmail .jackmail_statistics_opens .jackmail_statistics_number_principal {
+	color: #00adef;
+}
+
+.jackmail .jackmail_statistics_read .jackmail_statistics_number_principal {
+	color: #254872;
+}
+
+.jackmail .jackmail_statistics_unsubscribes .jackmail_statistics_number_principal {
+	color: #f66c6c;
+}
+
+.jackmail .jackmail_statistics_recipients, .jackmail .jackmail_statistics_clicks, .jackmail .jackmail_statistics_opens,
+.jackmail .jackmail_statistics_read, .jackmail .jackmail_statistics_unsubscribes {
+	line-height: 25px;
+}
+
+.jackmail .jackmail_statistics_filter {
+	display: table;
+	width: 100%;
+}
+
+.jackmail .jackmail_statistics_calendar {
+	display: none;
+	float: right;
+}
+
+.jackmail .jackmail_statistics_calendar.jackmail_statistics_calendar_display {
+	display: block;
+}
+
+.jackmail .jackmail_statistics_graphic {
+	width: 100%;
+	height: 250px;
+	padding-bottom: 20px;
+}
+
+.jackmail .jackmail_statistics_graphic_legend {
+	text-align: center;
+}
+
+.jackmail .jackmail_statistics_graphic_legend > span {
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_statistics_graphic_legend > span > span {
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_statistics_graphic_timeline_choice {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.jackmail .jackmail_statistics_graphic_timeline_choice input:first-child {
+	position: relative;
+	left: 3px;
+}
+
+.jackmail .jackmail_statistics_graphic_timeline_choice input:last-child {
+	position: relative;
+	left: -3px;
+}
+
+.jackmail .jackmail_statistics_graphic_timeline_choice input.jackmail_statistics_graphic_timeline_choice_selected {
+	background: #efefef;
+}
+
+.jackmail .jackmail_statistics_timeline {
+	height: 160px;
+	position: relative;
+}
+
+.jackmail .jackmail_statistics_timeline_line {
+	border-top: 1px solid black;
+	position: relative;
+	top: 80px;
+}
+
+.jackmail .jackmail_statistics_timeline_unsubscribe, .jackmail .jackmail_statistics_timeline_open, .jackmail .jackmail_statistics_timeline_click {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	top: 73px;
+}
+
+.jackmail .jackmail_statistics_timeline_unsubscribe > div, .jackmail .jackmail_statistics_timeline_open > div, .jackmail .jackmail_statistics_timeline_click > div {
+	width: 200px;
+	background: #5b5c62;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	padding: 5px;
+	display: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.jackmail .jackmail_statistics_timeline_unsubscribe:hover > div, .jackmail .jackmail_statistics_timeline_open:hover > div, .jackmail .jackmail_statistics_timeline_click:hover > div {
+	display: block;
+}
+
+.jackmail .jackmail_statistics_timeline_unsubscribe {
+	background: #f66d6c;
+}
+
+.jackmail .jackmail_statistics_timeline_open {
+	background: #0f9bdd;
+}
+
+.jackmail .jackmail_statistics_timeline_click {
+	background: #94bb22;
+}
+
+.jackmail span.jackmail_checked,
+.jackmail span.jackmail_unchecked {
+	text-align: center;
+	border: 1px solid #cbcacf;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	height: 13px;
+	margin-right: 5px;
+	padding-right: 0;
+	width: 13px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.jackmail span.jackmail_checked::before {
+	border-radius: 2px;
+	content: "_";
+	display: inline-block;
+	height: 9px;
+	margin-top: 1px;
+	width: 9px;
+	background: #adc108;
+}
+
+.jackmail span.jackmail_checked.jackmail_checked_recipients::before {
+	background: #254872;
+}
+
+.jackmail span.jackmail_checked.jackmail_checked_opens::before {
+	background: #03afed;
+}
+
+.jackmail span.jackmail_checked.jackmail_checked_clicks::before {
+	background: #adc108;
+}
+
+.jackmail span.jackmail_checked.jackmail_checked_unsubscribes::before {
+	background: #f36d6c;
+}
+
+.jackmail .jackmail_mt_0 {
+	margin-top: 0;
+}
+
+.jackmail .jackmail_statistics_grid_header_title {
+	padding: 4px;
+	float: left;
+}
+
+.jackmail .jackmail_campaigns_header span {
+	display: inline-block;
+	padding-bottom: 2px;
+}
+
+.jackmail .jackmail_statistics_buttons .dashicons {
+	font-size: 22px;
+	height: 19px;
+	margin-right: 5px;
+	cursor: pointer;
+	color: #494d52;
+}
+
+.jackmail .jackmail_statistics_buttons .dashicons:hover {
+	color: #5a5e63;
+}
+
+.jackmail .jackmail_statistics_compare {
+	cursor: pointer;
+	clear: both;
+	margin-top: 4px;
+	margin-bottom: 14px;
+}
+
+.jackmail .jackmail_search_container > div {
+	padding: 30px;
+}
+
+.jackmail .jackmail_search_container input[type="text"] {
+	background: none;
+	border: none;
+	font-size: 45px;
+	width: 100%;
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_pt_4 {
+	padding-top: 4px;
+}
+
+.jackmail .jackmail_search_need_help {
+	padding-top: 20px;
+}
+
+.jackmail .jackmail_search_need_help > div {
+	display: table;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.jackmail .jackmail_search_need_help > div > div {
+	display: table-cell;
+	background: white;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	width: 32%;
+	padding: 15px;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.jackmail .jackmail_search_need_help > div > div:hover {
+	box-shadow: 0 0 3px #bfbfbf;
+}
+
+.jackmail .jackmail_search_need_help > div > div.jackmail_search_need_help_separator {
+	display: table-cell;
+	width: 2%;
+	background: none;
+	border: none;
+	cursor: default;
+}
+
+.jackmail .jackmail_search_need_help > div > div.jackmail_search_need_help_separator:hover {
+	box-shadow: none;
+}
+
+.jackmail .jackmail_search_need_help > div > div p:first-child {
+	margin: 0;
+}
+
+.jackmail .jackmail_search_need_help > div > div p:last-child {
+	margin-bottom: 0;
+}
+
+.jackmail .jackmail_search_input {
+	padding-bottom: 35px;
+}
+
+.jackmail .jackmail_14 {
+	font-size: 14px;
+}
+
+.jackmail a {
+	text-decoration: none;
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_search_results, .jackmail .jackmail_search_suggestions {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_search_results > div {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+}
+
+.jackmail .jackmail_search_suggestions > div {
+	float: left;
+	width: 47%;
+	margin-right: 3%;
+}
+
+.jackmail .jackmail_search_faq_title, .jackmail .jackmail_search_campaigns_title, .jackmail .jackmail_search_module_title, .jackmail .jackmail_search_forum_title {
+	margin-bottom: 25px;
+}
+
+.jackmail .jackmail_search_results span.dashicons,
+.jackmail .jackmail_search_suggestions span.dashicons {
+	font-size: 11px;
+	color: white;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	line-height: 16px;
+	text-align: center;
+	position: relative;
+	top: 2px;
+	margin-right: 4px;
+}
+
+.jackmail .jackmail_search_results .jackmail_search_faq_title span.dashicons,
+.jackmail .jackmail_search_suggestions .jackmail_search_faq_title span.dashicons {
+	background: #ef5a20;
+}
+
+.jackmail .jackmail_search_results .jackmail_search_campaigns_title span.dashicons {
+	background: #00aeed;
+}
+
+.jackmail .jackmail_search_results .jackmail_search_module_title span.dashicons {
+	background: #8eba25;
+}
+
+.jackmail .jackmail_search_suggestions .jackmail_search_forum_title span.dashicons {
+	background: #8763a9;
+	font-size: 12px;
+}
+
+.jackmail .jackmail_search_faq span.dashicons {
+	color: #5a5a5a;
+	font-size: 18px;
+	margin-right: 4px;
+}
+
+.jackmail .jackmail_search_forum span.dashicons {
+	color: #5a5a5a;
+	font-size: 18px;
+	margin-right: 4px;
+	left: -2px;
+}
+
+.jackmail .jackmail_search_forum a {
+	color: #444444;
+}
+
+.jackmail .jackmail_search_forum a:hover {
+	text-decoration: underline;
+}
+
+.jackmail .jackmail_11 {
+	font-size: 11px;
+}
+
+.jackmail .jackmail_search_campaigns {
+	overflow: hidden;
+	width: 270px;
+	padding: 3px;
+	margin: 5px 0;
+}
+
+.jackmail .jackmail_search_campaigns:hover {
+	background: white;
+}
+
+.jackmail .jackmail_search_campaigns_left {
+	float: left;
+	border: 3px solid white;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	margin-right: 7px;
+}
+
+.jackmail .jackmail_search_campaigns_left img {
+	width: 40px;
+}
+
+.jackmail .jackmail_search_campaigns_center {
+	float: left;
+	width: 200px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_search_campaigns_center span {
+	white-space: nowrap;
+}
+
+.jackmail .jackmail_search_module > span, .jackmail .jackmail_search_faq > a {
+	cursor: pointer;
+	color: #444444;
+}
+
+.jackmail .jackmail_search_module > span:hover, .jackmail .jackmail_search_faq > a:hover, .jackmail .jackmail_suggestion_forum > a:hover {
+	text-decoration: underline;
+}
+
+.jackmail .dashicons:hover {
+	text-decoration: none !important;
+}
+
+.jackmail .jackmail_suggestion_forum > a {
+	color: #444444;
+}
+
+.jackmail .jackmail_search_details_header {
+	height: 35px;
+	padding-bottom: 15px;
+}
+
+.jackmail .jackmail_search_details_header span {
+	display: inline-block;
+	height: 20px;
+}
+
+.jackmail .jackmail_search_details_header span, .jackmail .jackmail_search_details_header span b {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.jackmail .jackmail_search_details_header input {
+	float: right;
+	position: relative;
+	top: -6px;
+}
+
+.jackmail .jackmail_search_details_header span.dashicons.dashicons-media-text {
+	color: white;
+	background: #ef5a22;
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+	padding-left: 0;
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 7px;
+}
+
+.jackmail .jackmail_message {
+	position: fixed;
+	z-index: 1004;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_message.jackmail_success {
+	box-sizing: border-box;
+	left: 0;
+	width: 100%;
+	margin-top: 12px;
+}
+
+.jackmail .jackmail_message.jackmail_success > div > span {
+	background: #80a71f;
+	border-radius: 5px;
+	padding: 8px 36px 8px 18px;
+	display: inline-block;
+	width: 230px;
+}
+
+.jackmail .jackmail_message.jackmail_error {
+	background: #ef5353;
+	padding: 20px 0;
+	box-sizing: border-box;
+	left: 0;
+	width: 100%;
+}
+
+.jackmail .jackmail_message div {
+	position: relative;
+}
+
+.jackmail .jackmail_message span {
+	position: relative;
+}
+
+.jackmail .jackmail_message span.dashicons.dashicons-no-alt {
+	font-size: 17px;
+	position: absolute;
+	right: 9px;
+}
+
+.jackmail .jackmail_progress {
+	position: fixed;
+	height: 4px;
+	width: 100%;
+	left: 0;
+	z-index: 1003;
+}
+
+.jackmail .jackmail_progress > div {
+	background: #bfec50;
+	height: 100%;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_grey {
+	font-size: 13px;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_column_2 > div {
+	display: table;
+	width: 100%;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_column_2 > div > div {
+	display: table-cell;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-left: 1px solid #8a98a6;
+	text-align: center;
+	width: 33.33%;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_column_2 > div > div:first-child {
+	padding-left: 0;
+	border: none;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_bold,
+.jackmail .jackmail_grid_lists .jackmail_column_2 > div > div span:first-child {
+	font-size: 15px;
+}
+
+.jackmail .jackmail_column_buttons .dashicons {
+	font-size: 17px;
+	margin-right: 5px;
+	cursor: pointer;
+	color: #b3b3b3;
+}
+
+.jackmail .jackmail_column_buttons .dashicons:hover {
+	color: #5a5e63;
+}
+
+.jackmail .jackmail_column_buttons span.jackmail_input_edit_container .dashicons {
+	display: inline-block;
+	margin-top: 0;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_grid_content .jackmail_column_selector {
+	margin-top: 10px;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_small_button .jackmail_dropdown_button_border_top {
+	right: 12px;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_small_button .jackmail_dropdown_button_border_top2 {
+	right: 13px;
+}
+
+.jackmail .jackmail_statistics_items {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_statistics_items div {
+	float: left;
+	width: 33.33%;
+	background: #eaebf0;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border: 1px solid #d8dbe0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_statistics_items div:first-child {
+	border-right: none;
+}
+
+.jackmail .jackmail_statistics_items div:last-child {
+	border-left: none;
+}
+
+.jackmail .jackmail_statistics_items div.jackmail_statistics_item_selected {
+	background: white;
+	border-top: 3px solid #94be2e;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	padding-top: 9px;
+}
+
+.jackmail .jackmail_statistics_items div.jackmail_statistics_item_not_selected:hover {
+	background: #f5f5f5;
+}
+
+.jackmail .jackmail_list_title, .jackmail .jackmail_list_title * {
+	font-size: 18px !important;
+	font-weight: normal;
+}
+
+.jackmail .jackmail_align_right {
+	text-align: right;
+}
+
+.jackmail .jackmail_grid .jackmail_right {
+	padding-right: 40px;
+}
+
+.jackmail .jackmail_statistics_retarget {
+	float: right;
+	margin-left: 5px;
+}
+
+.jackmail .jackmail_statistics_monitoring {
+	background: white;
+}
+
+.jackmail .jackmail_statistics_monitoring .jackmail_statistics_monitoring_nb_recipients {
+	font-size: 20px;
+}
+
+.jackmail .jackmail_statistics_monitoring .jackmail_grid_buttons {
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_statistics_monitoring .jackmail_grid_buttons .jackmail_left {
+	padding-top: 5px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphics {
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphics > div {
+	padding-bottom: 10px;
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_statistics_technologies_graphics > div:first-child {
+	border-right: 1px solid #f3f3f5;
+	padding-right: 20px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphics > div:last-child {
+	padding-left: 20px;
+}
+
+@media screen and (max-width: 1550px) {
+	.jackmail .jackmail_statistics_technologies_graphics > div {
+		float: none;
+		width: 100%;
+	}
+
+	.jackmail .jackmail_statistics_technologies_graphics > div:first-child {
+		border-right: none;
+		padding-right: 0;
+	}
+
+	.jackmail .jackmail_statistics_technologies_graphics > div:last-child {
+		padding-left: 0;
+	}
+}
+
+.jackmail .jackmail_statistics_technologies_numbers {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.jackmail .jackmail_statistics_technologies_numbers > div {
+	float: left;
+	width: 49%;
+	padding-bottom: 10px;
+}
+
+.jackmail .jackmail_statistics_technologies_numbers > div:first-child {
+	color: #8fbc25;
+	border-bottom: 3px solid #8fbc25;
+	box-sizing: border-box;
+	padding-right: 10px;
+	margin-right: 1%;
+}
+
+.jackmail .jackmail_statistics_technologies_numbers > div:last-child {
+	text-align: right;
+	color: #5d90c5;
+	border-bottom: 3px solid #5d90c5;
+	box-sizing: border-box;
+	padding-left: 10px;
+	margin-left: 1%;
+}
+
+.jackmail .jackmail_statistics_technologies_numbers > div span:first-child {
+	font-size: 20px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container {
+	width: 430px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div {
+	float: left;
+	width: 150px;
+	min-height: 1px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div.jackmail_statistics_technologies_graphic {
+	width: 130px;
+	height: 130px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div:last-child {
+	text-align: right;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	margin: 0 3px;
+	vertical-align: middle;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div p {
+	margin-top: 0;
+	margin-bottom: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.jackmail .jackmail_statistics_technologies_graphic_container > div p:last-child {
+	margin-bottom: 0;
+}
+
+.jackmail .jackmail_technologies_title {
+	color: #444444;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: 12px;
+}
+
+.jackmail .statistics_ok_nok .dashicons.dashicons-yes,
+.jackmail .statistics_ok_nok .dashicons.dashicons-no-alt {
+	font-size: 22px;
+}
+
+.jackmail .statistics_ok_nok .dashicons.dashicons-yes {
+	color: #48b54c;
+}
+
+.jackmail .statistics_ok_nok .dashicons.dashicons-no-alt {
+	color: #f21511;
+}
+
+.jackmail #jackmail_chartjs_synthesis_tooltip {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.90);
+	box-shadow: 2px 2px 10px 0 #656565;
+	color: black;
+	padding: 3px;
+	border-radius: 3px;
+	transition: opacity .1s ease;
+}
+
+.jackmail #jackmail_chartjs_synthesis_tooltip .jackmail_chartjs_synthesis_tooltip_key {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.jackmail #jackmail_chartjs_synthesis_tooltip .jackmail_chartjs_synthesis_tooltip_separator {
+	background: #cccccc;
+	height: 1px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table {
+	background: white;
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th {
+	text-align: left;
+	position: relative;
+	background: url('../img/grid_header_border.png') no-repeat center right #fbfaf9;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table td {
+	padding: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	border-bottom: 1px solid #f3f4f8;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table tr:last-child td {
+	border-bottom: 1px solid transparent;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th {
+	padding: 15px;
+	white-space: nowrap;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f3f4f8;
+	height: 55px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th * {
+	color: #444444;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th.jackmail_column_selector,
+.jackmail .jackmail_grid_container .jackmail_grid table td.jackmail_column_selector {
+	width: 50px;
+	height: 53px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th.jackmail_column_details,
+.jackmail .jackmail_grid_container .jackmail_grid table td.jackmail_column_details {
+	width: 100px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table td.jackmail_column_details * {
+	margin-left: 5px;
+}
+
+.jackmail .jackmail_grid_container.jackmail_grid_action .jackmail_grid table th:last-child,
+.jackmail .jackmail_grid_container.jackmail_grid_action .jackmail_grid table td:last-child {
+	width: 150px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table tr:hover {
+	background: #fbfaf9;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid.jackmail_grid_content {
+	overflow-y: auto;
+	min-height: 150px;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid.jackmail_grid_content,
+.jackmail .jackmail_grid_container .jackmail_grid.jackmail_grid_content_defined {
+	overflow-x: hidden;
+}
+
+.jackmail .jackmail_sending_campaign {
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.jackmail #jackmail_chartjs_technologies_tooltip {
+	opacity: 0;
+	position: absolute;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	padding: 3px;
+	border-radius: 8px;
+	transition: opacity .1s ease;
+	text-align: center;
+}
+
+.jackmail .jackmail_technologies_selectors_container {
+	height: 30px;
+	padding-bottom: 10px;
+}
+
+.jackmail .jackmail_technologies_selectors_container > div {
+	line-height: 26px;
+	float: left;
+}
+
+.jackmail .jackmail_technologies_selectors_container > div.jackmail_dropdown_button_container {
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+.jackmail .jackmail_technologies_grid {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.jackmail .jackmail_button_file_container {
+	overflow: hidden;
+	position: relative;
+}
+
+.jackmail .jackmail_button_file_container input[type="file"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.jackmail .loading_grid {
+	position: relative;
+}
+
+.jackmail .loading_grid span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th.jackmail_column_ordering {
+	cursor: pointer;
+	background: #fbfaf9;
+}
+
+.jackmail .jackmail_grid_container .jackmail_grid table th.jackmail_column_ordering::after {
+	width: 35px;
+	height: 20px;
+	background: url("../img/grid_header_border_ordering.png") no-repeat scroll right center #fbfaf9;
+	display: block;
+	content: "";
+	top: 18px;
+	float: right;
+	right: 0;
+	position: absolute;
+}
+
+.jackmail .jackmail_grid td:hover span.dashicons,
+.jackmail .jackmail_grid th:hover span.dashicons {
+	display: inline-block;
+}
+
+.jackmail .jackmail_all_pointer * {
+	cursor: pointer;
+}
+
+.jackmail span.jackmail_input_edit_container span.jackmail_input_edit_text {
+	height: 22px;
+	line-height: 22px;
+}
+
+.jackmail span.jackmail_input_edit_container input[type="text"] {
+	height: 22px;
+	line-height: 22px;
+	margin-left: -1px;
+}
+
+.jackmail span.jackmail_input_edit_container .dashicons {
+	position: relative;
+	cursor: pointer;
+	display: none;
+	height: 12px;
+	margin-top: 4px;
+}
+
+.jackmail .jackmail_plugin_list_name {
+	margin-left: 5px;
+}
+
+.jackmail .jackmail_plugin_list_name a {
+	color: #8a98a6;
+	border-bottom: 1px solid transparent;
+	transition: border .2s;
+}
+
+.jackmail .jackmail_plugin_list_name a:hover {
+	border-bottom: 1px solid #8a98a6;
+}
+
+.jackmail .jackmail_dropdown_button {
+	padding: 0;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	padding-left: 8px;
+	background: white;
+	height: 26px;
+	line-height: 26px;
+}
+
+.jackmail .jackmail_dropdown_button .dashicons.dashicons-arrow-down-alt2 {
+	width: 27px;
+	height: 26px;
+	line-height: 26px;
+	border-left: 1px solid #ececec;
+	margin-left: 5px;
+}
+
+.jackmail .jackmail_grid_header .jackmail_dropdown_button {
+	border: none;
+	border-left: 1px solid #5a5e63;
+	padding: 0 5px 3px 15px;
+	cursor: pointer;
+	display: inline-block;
+	background: none;
+}
+
+.jackmail .jackmail_grid_header .jackmail_dropdown_button .dashicons.dashicons-arrow-down-alt2 {
+	position: relative;
+	top: 1px;
+	width: auto;
+	height: auto;
+	border: none;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_dropdown_button,
+.jackmail .jackmail_grid_buttons_search .jackmail_dropdown_button .dashicons.dashicons-arrow-down-alt2 {
+	height: 28px;
+	line-height: 28px;
+}
+
+.jackmail .jackmail_header_buttons .jackmail_dropdown_button {
+	padding: 4px;
+	padding-left: 18px;
+	background: #80a71f;
+	border: none;
+}
+
+.jackmail .jackmail_header_buttons .jackmail_dropdown_button .dashicons.dashicons-arrow-down-alt2 {
+	border: none;
+}
+
+.jackmail .jackmail_previews_selection {
+	padding-top: 4px;
+	float: left;
+}
+
+.jackmail .jackmail_vertical_middle_container * {
+	vertical-align: middle;
+}
+
+.jackmail .jackmail_checkbox_title,
+.jackmail .jackmail_radio_title {
+	padding-left: 4px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_new_plugins span {
+	cursor: pointer;
+}
+
+.jackmail .jackmail_new_plugins > span:last-child {
+	padding-left: 4px;
+}
+
+.jackmail .jackmail_confirmation_message .dashicons.dashicons-no {
+	float: none;
+	text-align: right;
+	cursor: pointer;
+	font-size: 22px;
+	height: 20px;
+	width: 100%;
+	transition: opacity 0.5s;
+	position: relative;
+	top: -20px;
+	right: -40px;
+}
+
+.jackmail .jackmail_confirmation_message .dashicons.dashicons-no::before {
+	font-size: 22px;
+	padding: 0;
+	background: none;
+	box-shadow: none;
+	color: #444444;
+}
+
+.jackmail .jackmail_confirmation_message .dashicons.dashicons-no:hover {
+	opacity: 0.8;
+}
+
+.jackmail .jackmail_statistics_title, .jackmail .jackmail_statistics_title * {
+	font-size: 12px;
+}
+
+.jackmail .jackmail_statistics_title_compare {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 1300px) {
+	.jackmail .jackmail_statistics_title_compare {
+		width: 380px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.jackmail .jackmail_statistics_title_compare {
+		width: 320px;
+	}
+}
+
+.jackmail .jackmail_statistics_filters_dropdown {
+	overflow: hidden;
+	border: 1px solid #ccccce;
+	background: white;
+	margin-bottom: 20px;
+	height: 248px;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_header {
+	background: #494c51;
+	color: white;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_header > div:first-child {
+	border-left: 1px solid #3a3d42;
+	width: 155px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_left {
+	position: absolute;
+	width: 155px;
+	background: #f6f6f6;
+	height: 210px;
+	border-right: 3px solid #e9e9e9;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_right {
+	height: 211px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_left > div {
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_left > div .dashicons.dashicons-arrow-left {
+	display: none;
+	position: absolute;
+	right: -3px;
+	top: 5px;
+	font-size: 30px;
+	color: white;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_left > div:hover,
+.jackmail .jackmail_statistics_filters_dropdown_left > div.jackmail_statistics_filters_dropdown_left_current {
+	background: #dddddd;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_left > div:hover .dashicons.dashicons-arrow-left,
+.jackmail .jackmail_statistics_filters_dropdown_left > div.jackmail_statistics_filters_dropdown_left_current .dashicons.dashicons-arrow-left {
+	display: block;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_right > div > div {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 8px;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_right > div > div:hover {
+	background: #f6f6f6;
+}
+
+.jackmail .jackmail_statistics_filters_buttons {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.jackmail .jackmail_statistics_filters_buttons > div:first-child {
+	float: left;
+}
+
+.jackmail .jackmail_statistics_filters_buttons > div:last-child {
+	float: right;
+}
+
+.jackmail .jackmail_statistics_filters_buttons > div:first-child > input,
+.jackmail .jackmail_statistics_filters_buttons > div:first-child > div {
+	float: left;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1450px) {
+	.jackmail .jackmail_statistics_filters_buttons > div:first-child > input,
+	.jackmail .jackmail_statistics_filters_buttons > div:first-child > div {
+		clear: both;
+		margin-bottom: 5px;
+	}
+}
+
+.jackmail .jackmail_statistics_filters_buttons .jackmail_statistics_filters_buttons_segment {
+	background: #666666;
+	border-radius: 10px;
+	color: white;
+	padding: 5px 15px 5px 5px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_statistics_filters_buttons .jackmail_statistics_filters_buttons_segment .dashicons.dashicons-no-alt {
+	position: relative;
+	top: 3px;
+}
+
+.jackmail .jackmail_statistics_filters .jackmail_statistics_filters_validate {
+	padding: 5px 20px;
+}
+
+.jackmail .jackmail_statistics_filters_dropdown_right span.jackmail_checkbox_title {
+	padding-left: 10px;
+}
+
+.jackmail .jackmail_m_b_25 {
+	margin-bottom: 25px;
+}
+
+.jackmail .jackmail_m_b_5 {
+	margin-bottom: 5px;
+}
+
+.jackmail .jackmail_m_t_5 {
+	margin-top: 5px;
+}
+
+.jackmail .jackmail_m_t_20 {
+	margin-top: 20px;
+}
+
+.jackmail .jackmail_m_t_30 {
+	margin-top: 30px;
+}
+
+.jackmail .jackmail_m_t_40 {
+	margin-top: 40px;
+}
+
+.jackmail .jackmail_m_b_50 {
+	margin-bottom: 50px;
+}
+
+.jackmail .jackmail_m_b_0 {
+	margin-bottom: 0;
+}
+
+.jackmail .jackmail_m_r_15 {
+	margin-right: 15px;
+}
+
+.jackmail .jackmail_name_not_editable {
+	line-height: 23px;
+}
+
+.jackmail .jackmail_settings_container {
+	margin-bottom: 30px;
+}
+
+.jackmail .jackmail_my_account_title {
+	font-weight: bold;
+	font-size: 17px;
+	margin-top: 0;
+}
+
+.jackmail .jackmail_settings_container > div {
+	background: white;
+	border-bottom: 1px solid #f1f1f1;
+	overflow: hidden;
+	padding: 6px;
+}
+
+.jackmail .jackmail_settings_container > div.jackmail_settings_role {
+	overflow: visible;
+}
+
+.jackmail .jackmail_settings_container > div .jackmail_settings_selector {
+	float: left;
+	margin: 14px 15px;
+}
+
+.jackmail .jackmail_settings_selector.jackmail_settings_selector_no_plugins p {
+	padding: 0 10px;
+}
+
+.jackmail .jackmail_my_account_redirection {
+	overflow: hidden;
+	text-align: center;
+	background: white;
+	margin-bottom: 15px;
+	margin-top: -12px;
+	margin-left: -15px;
+	margin-right: -15px;
+	line-height: 45px;
+	max-height: 0;
+	transition: max-height 1s ease;
+}
+
+.jackmail .jackmail_my_account_redirection_visible {
+	max-height: 50px;
+	transition: max-height 1s ease;
+}
+
+.jackmail .jackmail_my_account_redirection span.dashicons.dashicons-lock {
+	font-size: 21px;
+}
+
+.jackmail .jackmail_my_account_redirection span {
+	vertical-align: middle;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container {
+	position: relative;
+	overflow: hidden;
+	height: 33px;
+	width: 180px;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container > span > input {
+	padding: 6px;
+	position: relative;
+	width: 100%;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container > input {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.jackmail .jackmail_grid_buttons_search.jackmail_statistics_monitoring_search .jackmail_grid_search_container > input {
+	right: 0;
+	left: auto;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container .jackmail_grid_search_input_container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.jackmail .jackmail_grid_buttons_search.jackmail_statistics_monitoring_search .jackmail_grid_search_container .jackmail_grid_search_input_container {
+	right: 0;
+	left: auto;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container .jackmail_grid_search_input_container span.dashicons.dashicons-search {
+	font-size: 20px;
+	top: 5px;
+	cursor: pointer;
+	right: 5px;
+	position: absolute;
+	z-index: 1;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_input_container {
+	width: 180px;
+	display: inline-block;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container .ng-hide-animate {
+	transition: all 0.5s;
+}
+
+.jackmail .jackmail_grid_buttons_search .jackmail_grid_search_container .ng-hide-animate.ng-hide {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+}
+
+.jackmail .jackmail_confirmation_large {
+	width: 490px;
+	height: 350px;
+	margin-top: -175px;
+	margin-left: -255px;
+	box-sizing: border-box;
+	text-align: left;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_confirmation_large_content {
+	height: 250px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+
+.jackmail .jackmail_confirmation_large_content_loading {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 150px;
+}
+
+.jackmail .jackmail_confirmation_update .jackmail_confirmation_large_content {
+	height: auto;
+	padding-top: 110px;
+}
+
+.jackmail .jackmail_confirmation_large_center_content {
+	display: table-cell;
+	height: 270px;
+	width: 470px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.jackmail .jackmail_confirmation_connectors {
+	box-sizing: border-box;
+	margin-left: -300px;
+	overflow: hidden;
+	text-align: left;
+	width: 600px;
+}
+
+.jackmail .jackmail_confirmation_connectors p.jackmail_bold {
+	margin-top: 20px;
+}
+
+.jackmail .jackmail_html_code {
+	background: #3e3e3e;
+	color: white;
+	border-left: 5px solid #8fbb24;
+	padding: 9px;
+	font-size: 12px;
+	margin-bottom: 8px;
+	word-wrap: break-word;
+}
+
+.jackmail .jackmail_html_code span {
+	font-size: 12px;
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_confirmation_connectors select {
+	width: 100%;
+}
+
+.jackmail .jackmail_button_not_checked.jackmail_checkbox_disabled {
+	cursor: default;
+	background: #f1f1f1;
+}
+
+.jackmail_checkbox_disabled span {
+	display: none;
+}
+
+.jackmail .jackmail_confirmation_uninstall .jackmail_vertical_middle_container {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.jackmail .jackmail_confirmation_uninstall .jackmail_reason_other_detail {
+	position: relative;
+}
+
+.jackmail .jackmail_confirmation_uninstall .jackmail_reason_other_detail input[type="text"] {
+	margin-bottom: 5px;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 210px;
+}
+
+.jackmail .jackmail_uninstall_reasons {
+	margin: 10px 0;
+}
+
+.jackmail .jackmail_settings_restriction_allowed_ips {
+	padding-left: 48px;
+}
+
+.jackmail .jackmail_settings_restriction_allowed_ip {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding: 6px 10px;
+	background: #ced1d6;
+	border-radius: 15px;
+	height: 20px;
+}
+
+.jackmail .jackmail_settings_restriction_allowed_ip .jackmail_content_editable {
+	display: inline-block;
+	min-width: 15px;
+	height: 18px;
+}
+
+.jackmail .jackmail_settings_restriction_allowed_ip .dashicons.dashicons-no-alt {
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
+
+.jackmail .jackmail_settings_restriction_add_allowed_ip {
+	margin-top: 6px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.jackmail .jackmail_settings_restriction_add_allowed_ip input[type="button"] {
+	padding: 0 5px;
+}
+
+.jackmail .jackmail_input {
+	padding: 6px;
+}
+
+.jackmail .jackmail_settings_subdomain {
+	width: 220px;
+}
+
+.jackmail .jackmail_settings_plr_15 > div {
+	padding: 0 15px;
+}
+
+.jackmail .jackmail_settings_domain_info {
+	overflow: hidden;
+	position: relative;
+}
+
+.jackmail .jackmail_settings_domain_info > span {
+	position: absolute;
+	border-top: 2px solid #ced1d6;
+	width: 240px;
+	display: block;
+	top: 62px;
+	left: 160px;
+	z-index: 1;
+}
+
+.jackmail .jackmail_settings_domain_info > div {
+	float: left;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 25px;
+	margin-right: 40px;
+}
+
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_with_data,
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_without_data {
+	background: white;
+	border-radius: 15px;
+	padding: 6px 10px;
+	width: 160px;
+	box-sizing: border-box;
+	border: 2px solid #ced1d6;
+	height: 34px;
+}
+
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_with_data {
+	background: #ced1d6;
+}
+
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_without_data * {
+	display: none;
+}
+
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_with_data > span:first-child {
+	width: 119px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.jackmail .jackmail_settings_domain_info > div > div.jackmail_settings_domain_info_with_data > span:last-child {
+	width: 13px;
+	height: 13px;
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_m_b_15 {
+	margin-bottom: 15px;
+}
+
+.jackmail .jackmail_settings_authentification {
+	padding-top: 40px;
+}
+
+.jackmail .jackmail_statistics_simplified {
+	box-sizing: border-box;
+	height: auto;
+	overflow-y: auto;
+}
+
+.jackmail .jackmail_statistics_simplified_info {
+	background: white;
+	border-bottom: 1px solid #dbdbdc;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_statistics_simplified_info_selector {
+	float: left;
+	width: 30px;
+	margin-top: 9px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_img {
+	float: left;
+	width: 50px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_img img {
+	margin-top: 2px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_data {
+	float: left;
+}
+
+.jackmail .jackmail_statistics_simplified_info_dropdown {
+	float: right;
+	margin-top: 13px;
+	cursor: pointer;
+	height: 12px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_data > span > span:first-child {
+	margin-right: 13px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_data .jackmail_grey,
+.jackmail .jackmail_statistics_simplified_info_data .jackmail_grey * {
+	font-size: 12px;
+}
+
+.jackmail .jackmail_statistics_simplified_selected {
+	background: #90bb24;
+}
+
+.jackmail .jackmail_statistics_simplified_selected .jackmail_statistics_simplified_info_data span,
+.jackmail .jackmail_statistics_simplified_selected .jackmail_statistics_simplified_info_dropdown span {
+	color: white;
+}
+
+.jackmail .jackmail_statistics_simplified_info_details {
+	background: #f1f1f1;
+	padding: 15px;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_technologies_grid .jackmail_statistics_simplified_info_details {
+	background: none;
+}
+
+.jackmail .jackmail_statistics_simplified_info_content {
+	overflow: hidden;
+	padding: 10px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_details > div {
+	overflow: hidden;
+	margin-bottom: 6px;
+}
+
+.jackmail .jackmail_statistics_simplified_info_details > div > div:first-child {
+	float: left;
+}
+
+.jackmail .jackmail_statistics_simplified_info_details > div > div:last-child {
+	float: right;
+}
+
+.jackmail .jackmail_statistics_simplified_info_details p {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.jackmail .jackmail_message_info {
+	background: #8fbb24;
+	color: white;
+	border-radius: 3px;
+	padding: 5px;
+	text-align: center;
+}
+
+.jackmail .jackmail_message_info.jackmail_message_info_error {
+	background: #ef5353;
+}
+
+.jackmail .jackmail_message_info input[type="button"] {
+	padding: 1px 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.jackmail .jackmail_confirmation.jackmail_confirmation_connectors .jackmail_confirmation_large_content {
+	padding: 0 10px 0 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 277px;
+}
+
+.jackmail .jackmail_confirmation.jackmail_confirmation_connectors p {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.jackmail .jackmail_confirmation.jackmail_confirmation_connectors .jackmail_confirmation_large {
+	height: 357px;
+	width: 650px;
+	margin-left: -325px;
+	margin-top: -180px;
+}
+
+.jackmail .jackmail_input_create_account_container {
+	position: relative;
+}
+
+.jackmail .jackmail_input_create_account_container.jackmail_input_create_account_container_error input {
+	border: 1px solid #e0001a;
+}
+
+.jackmail .jackmail_input_create_account_container span {
+	display: none;
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	color: #e0001a;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_input_create_account_container.jackmail_input_create_account_container_error span {
+	display: block;
+}
+
+.jackmail .jackmail_input_create_account_container {
+	margin: 8px 0;
+}
+
+.jackmail .jackmail_input_create_account_container_two_fields {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_input_create_account_container_two_fields > p {
+	float: left;
+	width: 47%;
+}
+
+.jackmail .jackmail_input_create_account_container_two_fields > p:first-child {
+	margin-right: 3%;
+}
+
+.jackmail .jackmail_input_create_account_container_two_fields > p:last-child {
+	margin-left: 3%;
+}
+
+.jackmail .jackmail_campaign_create_scenario {
+	margin: auto;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_campaign_create_scenario p.jackmail_subtitle {
+	clear: both;
+}
+
+.jackmail .jackmail_campaign_create_scenario > div > div {
+	width: 385px;
+	height: 170px;
+	border: 1px solid white;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 0 #9b9b9b;
+	box-sizing: border-box;
+	cursor: pointer;
+	float: left;
+	margin: 0 20px 20px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 110px;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	transition: border 1s;
+}
+
+.jackmail .jackmail_campaign_create_scenario > div > div:hover {
+	border: 1px solid #8fbb24;
+}
+
+.jackmail .jackmail_campaign_create_scenario > div > div span {
+	color: #8fbb24;
+	font-weight: bold;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.jackmail .jackmail_campaign_create_scenario > div > div:hover span {
+	opacity: 1;
+}
+
+.jackmail .jackmail_campaign_create_scenario_publish_a_post {
+	background-image: url('../img/publish_a_post.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_entry_to_a_list {
+	background-image: url('../img/import_list.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_automated_newsletter {
+	background-image: url('../img/automated_newsletter.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_woocommerce_automated_newsletter {
+	background-image: url('../img/woocommerce_automated_newsletter.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_custom_scenario {
+	background-image: url('../img/new_scenario.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_contactform7_submit_form {
+	background-image: url('../img/submit.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_new_order {
+	background-image: url('../img/order.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_cancelled_order {
+	background-image: url('../img/order.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_failed_order {
+	background-image: url('../img/order.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_processing_order {
+	background-image: url('../img/order.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_completed_order {
+	background-image: url('../img/order.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_refunded_order {
+	background-image: url('../img/cancel.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_invoice {
+	background-image: url('../img/invoice.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_note {
+	background-image: url('../img/note.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_reset_password {
+	background-image: url('../img/reset.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario_wc_email_customer_new_account {
+	background-image: url('../img/account.png');
+}
+
+.jackmail .jackmail_campaign_create_scenario .jackmail_center > span {
+	margin-left: 15px;
+}
+
+.jackmail .jackmail_campaign_create_scenario .jackmail_subtitle {
+	margin-left: 25px;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation {
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	position: absolute;
+	background: white;
+	display: none;
+	width: 100px;
+	z-index: 1;
+	text-align: center;
+	left: -107px;
+	top: -8px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation:hover {
+	background: #ef5353;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation:hover span {
+	color: white;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_value {
+	position: relative;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_value:hover .jackmail_display_delete_confirmation {
+	display: block;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation_text {
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation_popin {
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 10px;
+	background: none;
+	top: 0;
+	right: -12px;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation:hover .jackmail_display_delete_confirmation_popin_border span:last-child {
+	border-top: 7px solid #ef5353;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation_left .jackmail_display_delete_confirmation_popin_border span:first-child {
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #ececec;
+	border-right: none;
+	top: 7px;
+	left: 14px;
+	background: none;
+	position: absolute;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation_left .jackmail_display_delete_confirmation_popin_border span:last-child {
+	background: none;
+	position: absolute;
+	top: 8px;
+	left: 13px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #ffffff;
+	border-right: none;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_display_delete_confirmation.jackmail_display_delete_confirmation_left:hover .jackmail_display_delete_confirmation_popin_border span:last-child {
+	border-top: 7px solid transparent;
+	border-left: 7px solid #ef5353;
+}
+
+.jackmail .jackmail_input_edit_container .jackmail_input_edit_text,
+.jackmail .jackmail_input_edit_container .jackmail_input_transparent {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.jackmail .jackmail_mt_50 {
+	margin-top: 50px;
+}
+
+.jackmail .jackmail_m_l_10 {
+	margin-left: 10px !important;
+}
+
+.jackmail .jackmail_m_r_10 {
+	margin-right: 10px;
+}
+
+.jackmail .jackmail_import_list_selection.jackmail_import_list_selection_scenario > div:first-child {
+	display: none;
+}
+
+.jackmail .jackmail_import_list_selection.jackmail_import_list_selection_scenario > div:last-child {
+	padding: 10px;
+}
+
+.jackmail .jackmail_check_campaign_with_error .jackmail_white_button {
+	background: #ef5353;
+	color: white;
+	border: 1px solid #ef5353 !important;
+}
+
+.jackmail .jackmail_m_t_6 {
+	margin-top: 6px;
+}
+
+.jackmail .jackmail_no_cursor {
+	cursor: default !important;
+}
+
+.jackmail .jackmail_statistics_content .jackmail_grid_container {
+	padding: 15px;
+}
+
+.jackmail .jackmail_statistics_content {
+	overflow: hidden;
+	background: white;
+	margin: 20px;
+}
+
+.jackmail .jackmail_statistics_content_left {
+	float: left;
+	width: 380px;
+	overflow-y: auto;
+	min-height: 400px;
+	border-right: 1px solid #dbdbdc;
+}
+
+.jackmail .jackmail_statistics_content_right {
+	margin-left: 380px;
+}
+
+.jackmail .jackmail_statistics_no_campaign {
+	text-align: center;
+	padding-top: 150px;
+	font-weight: bold;
+}
+
+.jackmail .jackmail_statistics_no_data {
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.jackmail .jackmail_statistics_numbers_container {
+	overflow: hidden;
+	position: relative;
+	margin: -15px -15px 35px;
+}
+
+.jackmail .jackmail_statistics_numbers_container > div {
+	width: 50%;
+	float: left;
+	border-bottom: 1px solid #dbdbdc;
+	padding: 15px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 130px;
+}
+
+.jackmail .jackmail_statistics_numbers_container > div:nth-child(odd) {
+	border-right: 1px solid #dbdbdc;
+}
+
+.jackmail .jackmail_statistics_number_principal,
+.jackmail .jackmail_statistics_number_principal * {
+	font-size: 28px;
+}
+
+.jackmail .jackmail_statistics_number_principal > span > span {
+	font-size: 18px;
+}
+
+.jackmail .jackmail_statistics_numbers_title {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.jackmail .jackmail_statistics_numbers_container div > .jackmail_left:first-child {
+	width: 50%;
+	text-align: left;
+}
+
+.jackmail .jackmail_statistics_numbers_container div > .jackmail_left:last-child {
+	width: 50%;
+	text-align: right;
+}
+
+.jackmail .jackmail_left_70 {
+	width: 70% !important;
+}
+
+.jackmail .jackmail_left_30 {
+	width: 30% !important;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_inferior_nok {
+	color: #f66c6c;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_inferior_ok {
+	color: #abbf06;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_inferior_nok::before, .jackmail .jackmail_statistics_numbers_compare_inferior_ok::before {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_inferior_nok::before {
+	border-top: 9px solid #f66c6c;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_inferior_ok::before {
+	border-top: 9px solid #abbf06;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_superior_ok {
+	color: #abbf06;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_superior_nok {
+	color: #f66c6c;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_superior_ok::before, .jackmail .jackmail_statistics_numbers_compare_superior_nok::before {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_superior_ok::before {
+	border-bottom: 9px solid #abbf06;
+}
+
+.jackmail .jackmail_statistics_numbers_compare_superior_nok::before {
+	border-bottom: 9px solid #f66c6c;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_container {
+	padding-bottom: 45px;
+	padding-top: 10px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts td:first-child,
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts th:first-child {
+	width: 45px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts td,
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts th {
+	border-bottom: 1px solid #dbdbdc;
+	width: 30%;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts th {
+	text-align: left;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_opens {
+	color: #00adef;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_clicks {
+	color: #abbf06;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_i {
+	height: 35px;
+	color: #feca65;
+	font-size: 35px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_1 {
+	color: #feca65;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_2 {
+	color: #ccd0d3;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_3 {
+	color: #eca168;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_4,
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_5 {
+	color: lavender;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_value {
+	font-size: 11px;
+	position: relative;
+	top: 2px;
+	left: -9px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_details > div {
+	margin-top: 7px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_details > div:first-child {
+	margin-top: 0;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_details_link {
+	color: #8fbb24;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_statistics_clicks {
+	color: #abbf06;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_statistics_opens {
+	color: #00adef;
+}
+
+.jackmail .jackmail_grid_lists .jackmail_statistics_unsubscribes {
+	color: #f66c6c;
+}
+
+.jackmail .jackmail_none {
+	text-align: center;
+}
+
+.jackmail .jackmail_none .jackmail_none_title {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+.jackmail .jackmail_none .jackmail_none_help {
+	font-size: 12px;
+}
+
+.jackmail .jackmail_none .jackmail_none_help a {
+	color: inherit;
+}
+
+.jackmail .jackmail_none_help span.dashicons.dashicons-info {
+	font-size: 18px;
+}
+
+.jackmail .jackmail_statistics_content_left_title {
+	padding: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dbdbdc;
+	color: white;
+	background: #4b4e53;
+}
+
+.jackmail .jackmail_statistics_content_left_title > span {
+	margin-right: 8px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_compare {
+	overflow: hidden;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_compare > div {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_compare > div:first-child {
+	padding-right: 10px;
+}
+
+.jackmail .jackmail_statistics_synthesis_more_actives_contacts_compare > div:last-child {
+	padding-left: 10px;
+}
+
+.jackmail .jackmail_statistics_numbers_container .jackmail_overflow_hidden {
+	max-width: 325px;
+	margin: auto;
+}
+
+.jackmail .jackmail_statistics_synthesis_canvas {
+	margin-top: 10px;
+}
+
+.jackmail input[type="text"]::-ms-clear, .jackmail input[type="password"]::-ms-clear {
+	display: none;
+}
+
+.jackmail .jackmail_statistics_synthesis_repartition_legend p {
+	margin: 5px 0 0;
+}
+
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_open,
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_bounces,
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_no_open {
+	border-radius: 6px;
+	display: inline-block;
+	height: 12px;
+	margin-right: 1px;
+	vertical-align: middle;
+	width: 12px;
+	position: relative;
+	top: -1px;
+}
+
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_open {
+	background: #00adef;
+}
+
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_bounces {
+	background: #f66c6c;
+}
+
+.jackmail .jackmail_statistics_synthesis_repartition_legend .jackmail_statistics_synthesis_repartition_legend_no_open {
+	background: #dadada;
+}
+
+.jackmail .jackmail_settings_login_container.jackmail_settings_login_installation_container .jackmail_settings_login {
+	background: none;
+}
+
+.jackmail .jackmail_settings_login_container.jackmail_settings_login_installation_container .jackmail_settings_login input[type="text"],
+.jackmail .jackmail_settings_login_container.jackmail_settings_login_installation_container .jackmail_settings_login input[type="password"] {
+	background: none;
+}
+
+.jackmail .jackmail_settings_login_container.jackmail_settings_login_installation_container .jackmail_settings_login::after {
+	border-right: 1px solid red;
+}
+
+.jackmail .jackmail_installation_missing_configuration {
+	background: #ef5353;
+	color: white;
+	border-radius: 3px;
+	padding: 1px;
+	margin-bottom: 20px;
+}
+
+.jackmail .jackmail_current_content_email_type_choice_container {
+	position: absolute;
+	width: 300px;
+	z-index: 2;
+}
+
+.jackmail .jackmail_current_content_email_type_choice_container > div {
+	position: absolute;
+	left: 11px;
+	margin-top: 7px;
+}
+
+.jackmail .jackmail_current_content_email_type_choice_container input[type="button"] {
+	padding: 5px 10px;
+}
+
+.jackmail .jackmail_campaign_save {
+	margin-left: 5px;
+}
+
+.jackmail .jackmail_content_email {
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.jackmail span[jackmail-tooltip] {
+	position: relative;
+}
+
+.jackmail span[jackmail-tooltip] span.jackmail_tooltip {
+	display: none;
+	font-size: 13px;
+	position: absolute;
+	white-space: nowrap;
+	bottom: 20px;
+	left: 0;
+	padding: 8px;
+	z-index: 1015;
+	color: white;
+	background: #272c2e;
+	border-radius: 3px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+.jackmail span[jackmail-tooltip]:hover span.jackmail_tooltip {
+	display: block;
+}
+
+.jackmail_previews_grid_status span.jackmail_tooltip {
+	bottom: 30px !important;
+	white-space: normal !important;
+	box-sizing: border-box !important;
+}
+
+.jackmail span[jackmail-tooltip]:hover span.jackmail_tooltip.jackmail_tooltip_right {
+	right: 0;
+	left: auto;
+}
+
+.jackmail .jackmail_content_email_emailbuilder {
+	position: relative;
+	z-index: 12;
+	width: 200px;
+}
+
+.jackmail .jackmail_content_email_emailbuilder.jackmail_content_email_emailbuilder_html_or_txt {
+	width: 100%;
+}
+
+.jackmail .jackmail_content_email_emailbuilder.jackmail_content_email_emailbuilder_html_or_txt .jackmail_current_content_email_type_choice_container {
+	border-bottom: 1px solid #d0d1d8;
+	height: 39px;
+	background: #f1f1f1;
+	width: 100%;
+}
+
+.jackmail .jackmail_create_template {
+	cursor: pointer;
+}
+
+.jackmail .jackmail_templates_header {
+	background: white;
+	margin-top: -20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 10px;
+	padding: 20px;
+	display: table;
+	width: 100%;
+	position: relative;
+}
+
+.jackmail .jackmail_templates_header > div.jackmail_templates_header_field {
+	float: left;
+	margin-right: 10px;
+	width: 260px;
+}
+
+.jackmail .jackmail_templates_header > div.jackmail_title {
+	margin-bottom: 20px;
+	float: none;
+}
+
+.jackmail .jackmail_templates_header > div.jackmail_close {
+	background: #393d42;
+	width: 35px;
+	height: 35px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_templates_header > div.jackmail_close span {
+	color: white;
+	font-size: 22px;
+	margin-left: 6px;
+	margin-top: 6px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_dropdown_button {
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_dropdown_button .dashicons.dashicons-arrow-down-alt2 {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_grid_search_container {
+	position: relative;
+}
+
+.jackmail .jackmail_templates_header .jackmail_grid_search_container > span > input {
+	width: 100%;
+	height: 32px;
+	padding-left: 8px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_grid_search_container > span .dashicons.dashicons-search {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 20px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_dropdown_button_container > div {
+	top: 38px;
+}
+
+.jackmail .jackmail_templates_header .jackmail_dropdown_button_container > div {
+	width: 100%;
+}
+
+.jackmail .jackmail_confirmation_preview {
+	width: 720px;
+	height: 500px;
+	margin-left: -360px;
+	margin-top: -250px;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_confirmation_preview iframe {
+	width: 620px;
+	height: 420px;
+}
+
+.jackmail .jackmail_campaign_subject_customize {
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	top: -14px;
+}
+
+.jackmail .jackmail_campaign_subject_customize > div {
+	position: absolute;
+}
+
+.jackmail .jackmail_campaign_subject_customize .jackmail_dropdown_button_container {
+	z-index: 13;
+	top: -5px;
+}
+
+.jackmail .jackmail_content_editable_not_empty {
+	color: #32373c;
+}
+
+.jackmail .jackmail_campaign_header .jackmail_content_editable_not_empty {
+	color: #32373c;
+}
+
+.jackmail .jackmail_content_editable_empty {
+	color: #8a98a6;
+}
+
+.jackmail .jackmail_content_editable_blur {
+	position: fixed;
+	top: -30000px;
+}
+
+.jackmail .jackmail_technologies_grid .jackmail_grid {
+	max-height: 246px;
+}
+
+.jackmail .jackmail_search_background.ng-hide-animate {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	transition: all 0.5s;
+	z-index: 9;
+	top: 0;
+}
+
+.jackmail .jackmail_search_background.ng-hide-animate.ng-hide {
+	visibility: hidden !important;
+	height: 0 !important;
+}
+
+.jackmail .jackmail_search_container.ng-hide-animate {
+	transition: all 0.5s;
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_search_container.ng-hide-animate.ng-hide {
+	visibility: hidden !important;
+	height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	opacity: 0 !important;
+}
+
+.jackmail .jackmail_text_green {
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_text_red {
+	color: #ef5353;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_button_container_left {
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_button_container_left > div {
+	left: 0;
+	right: auto;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_button_container_left > div span.jackmail_dropdown_button_border_top {
+	left: 14px;
+	right: auto;
+}
+
+.jackmail .jackmail_dropdown_button_container.jackmail_dropdown_button_container_left > div span.jackmail_dropdown_button_border_top2 {
+	left: 15px;
+	right: auto;
+}
+
+.jackmail .jackmail_lists_return {
+	color: black;
+	background: white;
+	padding: 6px;
+	font-size: 17px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.jackmail #jackmail_emailbuilder_container {
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.jackmail #jackmail_emailbuilder_container.jackmail_emailbuilder_container_hidden {
+	position: fixed;
+	top: -10000px;
+	left: -10000px;
+}
+
+.jackmail .jackmail_settings_campaign {
+	background: white;
+	width: 540px;
+	margin: auto;
+	padding: 15px;
+	border-radius: 1px;
+	display: table;
+}
+
+.jackmail .jackmail_settings_campaign_left {
+	display: table-cell;
+	width: 130px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_file,
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_click,
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div > div > span.jackmail_dropdown_button_select > span {
+	padding: 6px 15px;
+}
+
+.jackmail .jackmail_settings_campaign_left.jackmail_settings_campaign_left_publish_a_post {
+	background: url("../img/publish_a_post.png") no-repeat top center;
+}
+
+.jackmail .jackmail_settings_campaign_left.jackmail_settings_campaign_left_automated_newsletter {
+	background: url("../img/automated_newsletter.png") no-repeat top center;
+}
+
+.jackmail .jackmail_settings_campaign_right {
+	display: table-cell;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity_container > div,
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_posts_container > div {
+	clear: both;
+	height: 35px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity {
+	margin-left: 17px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity_container .jackmail_settings_campaign_option_periodicity > div,
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity_container .jackmail_settings_campaign_option_periodicity > span,
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_posts_container .jackmail_settings_campaign_option_posts > div,
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_posts_container .jackmail_settings_campaign_option_posts > span {
+	float: left;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity .jackmail_settings_campaign_option_periodicity_begin {
+	position: relative;
+	top: 3px;
+	margin-left: 7px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity .jackmail_settings_campaign_option_periodicity_end {
+	position: relative;
+	top: 3px;
+	margin-left: 7px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity .jackmail_settings_campaign_option_periodicity_dropdown {
+	margin-left: 10px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_periodicity_dropdown .jackmail_dropdown_button_content,
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_posts_dropdown .jackmail_dropdown_button_content {
+	min-width: 80px;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_settings_campaign_option_posts > span {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: 5px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div {
+	right: auto;
+	left: 0;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div span.jackmail_dropdown_button_border_top {
+	right: auto;
+	left: 14px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_dropdown_button_container > div span.jackmail_dropdown_button_border_top2 {
+	right: auto;
+	left: 15px;
+}
+
+.jackmail .jackmail_settings_campaign .jackmail_campaign_calendar {
+	width: 342px;
+}
+
+.jackmail .jackmail_check_campaign span.dashicons.dashicons-editor-help {
+	font-size: 19px;
+}
+
+.jackmail .jackmail_targeting_container {
+	background: white;
+}
+
+.jackmail .jackmail_targeting_content > div {
+	border-left: 1px solid #f3f4f8;
+	border-right: 1px solid #f3f4f8;
+	border-bottom: 1px solid #f3f4f8;
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+
+.jackmail .jackmail_targeting_content > div > div {
+	padding: 10px;
+}
+
+.jackmail .jackmail_targeting_content input[type="text"] {
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	margin-left: 10px;
+	margin-right: 11px;
+	padding: 5px;
+}
+
+.jackmail .jackmail_targeting_content .dashicons.dashicons-no-alt {
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	top: 5px;
+}
+
+.jackmail .jackmail_confirmation_connection {
+	box-sizing: border-box;
+	height: 330px;
+	margin-left: -285px;
+	margin-top: -165px;
+	overflow: hidden;
+	text-align: left;
+	width: 570px;
+}
+
+.jackmail .jackmail_m_l_r_5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_header_container span.jackmail_content_editable:focus {
+	border-bottom: 1px solid white;
+}
+
+.jackmail .jackmail_m_l_20 {
+	margin-left: 20px;
+}
+
+.jackmail .jackmail_code {
+	background: #3e3e3e;
+	color: white;
+	border-left: 5px solid #8fbb24;
+	padding: 9px;
+	font-size: 12px;
+	margin-bottom: 8px;
+	word-wrap: break-word;
+}
+
+.jackmail .jackmail_code span {
+	font-size: 12px;
+	color: #8fbb24;
+}
+
+.jackmail .jackmail_campaign_status_select {
+	float: left;
+	margin-right: 10px;
+}
+
+.jackmail email-builder .email-builder__side-menu,
+.jackmail email-builder .email-builder__side-menu-header {
+	position: absolute;
+}
+
+.jackmail email-builder .email-builder__main-container {
+	overflow: auto;
+}
+
+.jackmail #jackmail_emailbuilder_container {
+	overflow: hidden;
+}
+
+.jackmail_plugin #wpbody-content {
+	padding-bottom: 0;
+}
+
+.toplevel_page_jackmail_campaigns #wpbody-content,
+.jackmail_page_jackmail_lists #wpbody-content,
+.jackmail_page_jackmail_templates #wpbody-content,
+.jackmail_page_jackmail_statistics #wpbody-content,
+.jackmail_page_jackmail_settings #wpbody-content {
+	padding-bottom: 65px;
+}
+
+.jackmail .CodeMirror {
+	z-index: 1 !important;
+}
+
+.jackmail .CodeMirror-scroll {
+	margin-bottom: 0;
+}
+
+.jackmail .CodeMirror-gutters {
+	left: 0 !important;
+}
+
+.jackmail_notice_container {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	overflow: hidden;
+	height: 40px;
+	width: 100%;
+}
+
+.jackmail_notice_container .dashicons.dashicons-dismiss {
+	position: absolute;
+	right: 11px;
+	top: 11px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.jackmail_plugin .jackmail_notice_subcontainer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	background: #f1f1f1;
+	z-index: 1001;
+}
+
+.jackmail_plugin .jackmail_notice_subcontainer > div {
+	margin-left: 175px;
+}
+
+.jackmail_notice {
+	background: white;
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	border-left: 5px solid #8fbb24;
+	margin-right: 20px;
+	position: relative;
+}
+
+.jackmail_notice > p {
+	background: url('../img/logo2.png') no-repeat left center;
+	padding: 3px 3px 3px 35px;
+	margin: 0;
+}
+
+.jackmail_notice.jackmail_big_notice > p {
+	background: url('../img/jackmail_logo.svg') no-repeat left center;
+	background-size: 100px 100px;
+	padding-left: 110px;
+}
+
+.jackmail_notice a {
+	color: #8fbb24;
+}
+
+.jackmail_plugin .notice:not(.jackmail_notice) {
+	display: none;
+}
+
+#toplevel_page_jackmail_installation > ul > li:nth-child( 3 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 3 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 4 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 5 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 7 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 8 ),
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 10 ) {
+	display: none;
+}
+
+#toplevel_page_jackmail_campaigns > ul > li:nth-child( 14 ) > a > span {
+	color: #8fbb24;
+	font-weight: bold;
+}
+
+.jackmail_plugin #wpbody {
+	background: #f1f1f1;
+}
+
+.jackmail_plugin #footer-left,
+.jackmail_plugin #footer-upgrade,
+.jackmail_plugin .update-nag {
+	display: none;
+}
+
+a.jackmail_create_campaign_button {
+	color: white;
+	background: #8fbb24;
+	border-radius: 3px;
+	text-decoration: none;
+	padding: 8px;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.jackmail ::-webkit-scrollbar {
+	width: 8px;
+}
+
+.jackmail ::-webkit-scrollbar-thumb {
+	background-color: #797979;
+	border-radius: 6px;
+}
+
+.jackmail [ng\:cloak], .jackmail [ng-cloak], .jackmail [data-ng-cloak], .jackmail [x-ng-cloak], .jackmail .ng-cloak, .jackmail .x-ng-cloak {
+	display: none !important;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div {
+	height: 29px;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div > div:first-child {
+	background: white;
+	border-radius: 2px;
+	padding: 6px 12px;
+	width: 70px;
+	margin: auto;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div > div:first-child span.dashicons.dashicons-arrow-down-alt2 {
+	position: relative;
+	top: 4px;
+	left: 11px;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions * {
+	color: black;
+	text-align: left;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div > div:last-child > div {
+	margin: auto;
+	margin-left: 71px;
+	border-radius: 2px;
+	overflow: hidden;
+	cursor: pointer;
+	width: auto;
+	min-width: 94px;
+	display: block;
+	float: left;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div > div:last-child > div > span {
+	display: block;
+	background: white;
+	padding: 6px 12px;
+}
+
+.jackmail .jackmail_previews_grid_dropdown_actions > div > div:last-child > div > span:hover {
+	background: #8fbb24;
+	color: white;
+}
+
+.jackmail .jackmail_previews_grid_by {
+	font-style: italic;
+}
+
+.jackmail .jackmail_campaign_emojis_container {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_campaign_emojis {
+	position: absolute;
+	z-index: 10000;
+	width: 156px;
+	height: 246px;
+	background: white;
+	border: 1px solid #d0d1d8;
+	padding: 10px;
+	border-radius: 2px;
+	top: 8px;
+}
+
+.jackmail .jackmail_campaign_emojis .jackmail_dropdown_button_container {
+	margin-bottom: 10px;
+}
+
+.jackmail .jackmail_campaign_emojis .jackmail_dropdown_button_container .jackmail_dropdown_button_content {
+	height: 198px;
+	overflow-y: scroll;
+}
+
+.jackmail .jackmail_campaign_emojis .jackmail_dropdown_button_container span.jackmail_dropdown_button_click {
+	padding: 5px;
+}
+
+.jackmail .jackmail_campaign_emojis_img {
+	float: left;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	margin: 5px;
+	background-image: url('../libs/sheet_emojione_16.png');
+	background-repeat: no-repeat;
+	background-position: -16px -400px;
+}
+
+.jackmail .jackmail_campaign_emojis_title {
+	border: 1px solid #ececec;
+	border-radius: 2px;
+	overflow: hidden;
+	position: absolute;
+	top: -19px;
+}
+
+.jackmail .jackmail_size_22 {
+	font-size: 22px;
+}
+
+.jackmail .jackmail_m_b_13 {
+	margin-bottom: 13px;
+}
+
+.jackmail .jackmail_campaign_checklist_info {
+	display: block;
+	padding-top: 15px;
+}
+
+.jackmail .jackmail_check_campaign_infos.jackmail_check_campaign_infos_not_checked .jackmail_icon_ok,
+.jackmail .jackmail_check_campaign_infos.jackmail_check_campaign_infos_not_checked .jackmail_check_campaign_data,
+.jackmail .jackmail_check_campaign_infos.jackmail_check_campaign_infos_not_checked .jackmail_ckeck_campaign_button {
+	visibility: hidden;
+}
+
+.jackmail .jackmail_installation_end_container {
+	width: 550px;
+	margin: auto;
+	padding-top: 110px;
+	position: relative;
+}
+
+.jackmail .jackmail_installation_end {
+	width: 150px;
+	margin: auto;
+	background: #32373c;
+}
+
+.jackmail .jackmail_installation_end > div {
+	padding: 10px;
+}
+
+.jackmail .jackmail_installation_end .jackmail_installation_end_title {
+	background: url('../img/plugin.png') no-repeat 10px center #0073aa;
+	color: white;
+	padding-left: 35px;
+}
+
+.jackmail .jackmail_installation_end .jackmail_installation_end_link {
+	color: rgba(240, 245, 250, 0.7);
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+.jackmail .jackmail_installation_end .jackmail_installation_end_link:hover {
+	color: white;
+}
+
+.jackmail .jackmail_installation_end_campaigns,
+.jackmail .jackmail_installation_end_lists,
+.jackmail .jackmail_installation_end_templates,
+.jackmail .jackmail_installation_end_statistics {
+	position: absolute;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.jackmail .jackmail_installation_end_campaigns_arrow,
+.jackmail .jackmail_installation_end_lists_arrow,
+.jackmail .jackmail_installation_end_templates_arrow,
+.jackmail .jackmail_installation_end_statistics_arrow {
+	width: 80px;
+	height: 84px;
+	position: absolute;
+}
+
+.jackmail .jackmail_installation_end_campaigns {
+	width: 154px;
+	height: 26px;
+	top: 67px;
+	left: 43px;
+}
+
+.jackmail .jackmail_installation_end_campaigns_arrow {
+	background: url('../img/install_campaigns_arrow.png') no-repeat top center;
+	top: 90px;
+	left: 120px;
+}
+
+.jackmail .jackmail_installation_end_lists {
+	width: 145px;
+	height: 28px;
+	top: 105px;
+	right: 30px;
+}
+
+.jackmail .jackmail_installation_end_lists_arrow {
+	background: url('../img/install_lists_arrow.png') no-repeat top center;
+	top: 132px;
+	right: 150px;
+}
+
+.jackmail .jackmail_installation_end_templates {
+	width: 210px;
+	height: 30px;
+	top: 325px;
+	left: -30px;
+}
+
+.jackmail .jackmail_installation_end_templates_arrow {
+	background: url('../img/install_templates_arrow.png') no-repeat top center;
+	top: 237px;
+	left: 126px;
+}
+
+.jackmail .jackmail_installation_end_statistics {
+	width: 142px;
+	height: 29px;
+	top: 357px;
+	right: 60px;
+}
+
+.jackmail .jackmail_installation_end_statistics_arrow {
+	background: url('../img/install_statistics_arrow.png') no-repeat top center;
+	top: 273px;
+	right: 170px;
+}
+
+.jackmail .jackmail_name_popup {
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	background: #fcfcfc;
+	margin: -6px auto 5px;
+}
+
+.jackmail .jackmail_check_campaign_warning_container .dashicons {
+	position: relative;
+	top: 3px;
+}
+
+.jackmail .jackmail_check_campaign_warning {
+	border-bottom: 1px dotted #ef5353;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_check_campaign_warning.jackmail_check_campaign_warning_unsubscribe_link {
+	color: #ef5353;
+}
+
+.jackmail .jackmail_email_list_detail_buttons_container {
+	display: table;
+	margin-bottom: 20px;
+}
+
+.jackmail .jackmail_email_list_detail_buttons_container > div {
+	float: left;
+	margin-right: 15px;
+}
+
+.jackmail .jackmail_email_list_detail_buttons_container > div:last-child {
+	margin-top: 5px;
+}
+
+.jackmail .jackmail_email_list_detail_buttons_container .jackmail_dropdown_button {
+	height: 28px;
+	line-height: 28px;
+}
+
+.jackmail .jackmail_email_list_detail_container .jackmail_email_list_detail_general {
+	padding: 25px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_email_list_detail_img {
+	background: url('../img/email_list_detail.png') no-repeat top center;
+	width: 139px;
+	height: 139px;
+	margin: 20px auto;
+}
+
+.jackmail .jackmail_email_list_detail_active,
+.jackmail .jackmail_email_list_detail_unsubscribed,
+.jackmail .jackmail_email_list_detail_hardbounced,
+.jackmail .jackmail_email_list_detail_complained {
+	background: #f66c6c;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: white;
+	border-radius: 11px;
+	padding: 2px 7px;
+}
+
+.jackmail .jackmail_email_list_detail_active {
+	background: #8fbb24;
+}
+
+.jackmail .jackmail_email_list_detail_container {
+	float: left;
+	width: 50%;
+}
+
+.jackmail .jackmail_email_list_detail_container .jackmail_email_list_detail_block {
+	background: white;
+	border: 1px solid #d8dbe0;
+}
+
+.jackmail .jackmail_email_list_detail_container div.jackmail_email_list_detail_view {
+	padding: 10px 15px;
+	font-weight: bold;
+	border-top: 1px solid #d8dbe0;
+	border-bottom: 1px solid #d8dbe0;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_email_list_detail_container div.jackmail_email_list_detail_view span.dashicons {
+	float: right;
+	margin-top: 3px;
+}
+
+.jackmail .jackmail_email_list_detail_email {
+	font-size: 15px;
+}
+
+.jackmail .jackmail_email_list_detail_list_name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	width: 350px;
+}
+
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_img {
+	margin: 0;
+	margin-right: 20px;
+	width: 60px;
+	height: 60px;
+	background-size: 100% auto;
+	float: left;
+}
+
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_email {
+	float: left;
+}
+
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_active,
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_unsubscribed,
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_hardbounced,
+.jackmail .jackmail_email_list_detail_general.jackmail_email_list_detail_mini .jackmail_email_list_detail_complained {
+	right: auto;
+	left: 105px;
+	top: 47px;
+}
+
+.jackmail .jackmail_email_list_detail_grid_container {
+	max-height: 225px;
+	overflow-y: auto;
+}
+
+.jackmail .jackmail_email_list_detail_grid {
+	padding: 10px;
+	width: 100%;
+	border-spacing: 0;
+}
+
+.jackmail .jackmail_email_list_detail_grid tr td {
+	padding: 7px;
+}
+
+.jackmail .jackmail_email_list_detail_grid tr:nth-child(odd) {
+	background: #fbfaf9;
+	border-radius: 3px;
+}
+
+.jackmail .jackmail_email_list_detail_grid tr > td:first-child {
+	display: inline-block;
+	width: 100px;
+	color: grey;
+}
+
+.jackmail .jackmail_email_list_detail_grid input {
+	width: 100%;
+	border: 1px solid transparent;
+	background: none;
+}
+
+.jackmail .jackmail_email_list_detail_grid input:hover,
+.jackmail .jackmail_email_list_detail_grid input:focus {
+	border-bottom: 1px solid #ececec;
+}
+
+.jackmail .jackmail_email_list_detail_statistics {
+	background: #5a5e63;
+	overflow: hidden;
+}
+
+.jackmail .jackmail_email_list_detail_statistics > div {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-right: 1px solid #4e5257;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_email_list_detail_statistics span {
+	display: block;
+}
+
+.jackmail .jackmail_email_list_detail_statistics span:first-child {
+	color: #a2a4a6;
+}
+
+.jackmail .jackmail_email_list_detail_statistics span:last-child {
+	color: white;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.jackmail .jackmail_text_left {
+	text-align: left;
+}
+
+.jackmail .jackmail_confirmation .jackmail_title {
+	margin-top: 0;
+}
+
+.jackmail .jackmail_email_list_detail_unsubscribe,
+.jackmail .jackmail_email_list_detail_unblacklist {
+	border-radius: 3px;
+	text-align: center;
+	padding: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.jackmail .jackmail_email_list_detail_unsubscribe {
+	border: 1px solid #f66c6c;
+	color: #f66c6c;
+	transition: all 0.5s;
+}
+
+.jackmail .jackmail_email_list_detail_unsubscribe:hover {
+	background: #f66c6c;
+	color: white;
+}
+
+.jackmail .jackmail_email_list_detail_unblacklist {
+	border: 1px solid #8fbb24;
+	color: #8fbb24;
+	transition: all 0.5s;
+}
+
+.jackmail .jackmail_email_list_detail_unblacklist:hover {
+	background: #8fbb24;
+	color: white;
+}
+
+.jackmail .jackmail_email_list_detail_unsubscribe .dashicons,
+.jackmail .jackmail_email_list_detail_unblacklist .dashicons {
+	font-size: 25px;
+	position: relative;
+	top: -4px;
+	margin-right: 5px;
+}
+
+.jackmail .jackmail_email_list_detail_unsubscribe span:last-child,
+.jackmail .jackmail_email_list_detail_unblacklist span:last-child {
+	font-size: 15px;
+}
+
+.jackmail .jackmail_list_detail_timeline {
+	height: 450px;
+	float: right;
+	padding-left: 25%;
+	width: 50%;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.jackmail .jackmail_list_detail_timeline_line {
+	height: 450px;
+	border-left: 1px solid black;
+	left: 6px;
+	position: relative;
+}
+
+.jackmail .jackmail_list_detail_timeline > div > div {
+	right: 20px;
+	bottom: -14px;
+}
+
+.jackmail .jackmail_copy_paste {
+	height: 140px;
+	width: 389px;
+}
+
+.jackmail .jackmail_margin_none {
+	margin: 0;
+}
+
+.jackmail .jackmail_info_grey {
+	color: #d9d9d9 !important;
+}
+
+.jackmail .jackmail_not_enough_credits, .jackmail .jackmail_not_enough_credits * {
+	color: #ef5353;
+}
+
+.jackmail .jackmail_not_enough_credits a {
+	text-decoration: underline;
+}
+
+.jackmail .jackmail_email_list_detail_buttons_container .jackmail_dropdown_button_container .jackmail_button_checked,
+.jackmail .jackmail_email_list_detail_buttons_container .jackmail_dropdown_button_container .jackmail_button_not_checked {
+	display: none;
+}
+
+.jackmail .jackmail_step_header {
+	position: relative;
+	top: -57px;
+}
+
+.jackmail .jackmail_step_header > div {
+	margin: auto;
+	width: 320px;
+	z-index: 1002;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 18px;
+}
+
+.jackmail .jackmail_step_header .jackmail_step_header_active,
+.jackmail .jackmail_step_header .jackmail_step_header_inactive {
+	cursor: pointer;
+}
+
+.jackmail .jackmail_step_header .jackmail_step_header_active {
+	font-weight: bold;
+}
+
+.jackmail .jackmail_step_header .jackmail_step_header_inactive {
+	opacity: 0.9;
+}
+
+.jackmail .jackmail_domain_info_available * {
+	color: #ef5353;
+}
+
+.jackmail .jackmail_step_header .dashicons.dashicons-arrow-right-alt2 {
+	position: relative;
+	top: 3px;
+}
+
+.jackmail .jackmail_statistics_monitoring .jackmail_grid_content_defined {
+	max-height: 510px
+}
+
+.jackmail .jackmail_settings_login_container .jackmail_button_not_checked {
+	position: relative;
+	top: -1px;
+}
+
+.jackmail .jackmail_emailbuider_conditions {
+	background: white;
+	height: 110px;
+	overflow-y: scroll;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d5d6d8;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.jackmail .cm-custom-sb-parentheses {
+	color: #80a71f;
+}
+
+.jackmail_page_jackmail_campaign .crisp-client .crisp-1 .crisp-39.crisp-40 > a,
+.jackmail_page_jackmail_scenario .crisp-client .crisp-1 .crisp-39.crisp-40 > a,
+.jackmail_page_jackmail_campaign .crisp-client .crisp-1[data-full-view="true"] .crisp-39.crisp-40 > a,
+.jackmail_page_jackmail_scenario .crisp-client .crisp-1[data-full-view="true"] .crisp-39.crisp-40 > a {
+	position: absolute;
+	bottom: 75px !important;
+}
+
+.jackmail_page_jackmail_campaign .crisp-client .crisp-1 {
+	bottom: 150px !important;
+}
+
+.jackmail_page_jackmail_campaign .crisp-client > div[data-full-view] > div > a[href] > span:nth-child(2),
+.jackmail_page_jackmail_scenario .crisp-client > div[data-full-view] > div > a[href] > span:nth-child(2) {
+	position: relative !important;
+	bottom: 15px !important;
+}
+
+.jackmail .jackmail_conditions,
+.jackmail .jackmail_conditions * {
+	font-size: 11px;
+	color: #8a98a6;
+}
+
+.jackmail .jackmail_conditions a {
+	text-decoration: underline;
+}
+
+.jackmail .jackmail_installation_connected {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+.jackmail .jackmail_settings_debug_logs {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.jackmail_settings_debug_table {
+	clear: both;
+	border: 1px solid grey;
+	border-bottom: none;
+	margin-bottom: 15px;
+}
+
+.jackmail_settings_debug_table > div {
+	clear: both;
+	overflow: hidden;
+	border-bottom: 1px solid grey;
+}
+
+.jackmail_settings_debug_table > div:nth-child(even) {
+	background: #eeeeee;
+}
+
+.jackmail_settings_debug_table > div > div {
+	float: left;
+	padding: 5px;
+}
+
+.jackmail_settings_debug_table > div > div:first-child {
+	width: 150px;
+	border-right: 1px solid grey;
+	font-weight: bold;
+}
+
+.jackmail_settings_debug_table input[type="button"] {
+	padding: 0px 3px;
+}
+
+.jackmail_footer_review {
+	font-style: italic;
+}
+
+.jackmail_footer_review .dashicons.dashicons-star-filled {
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: 2px;
+	color: #ffb900;
+}
+
+.jackmail_footer_review a:last-child {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1150px) {
+	.jackmail .jackmail_statistics_title_compare {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+
+	.jackmail_page_jackmail_statistics #wpcontent {
+		min-width: 0 !important;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_content_left {
+		float: none;
+		width: 100%;
+		height: auto !important;
+		min-height: 0;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_no_campaign {
+		padding: 15px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_content_right {
+		margin-left: 0;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_numbers_container > div {
+		float: none;
+		width: 100%;
+		border-right: none;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_numbers_container .jackmail_overflow_hidden {
+		max-width: 100%;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_numbers > div {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		padding-left: 0;
+		margin-bottom: 15px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_items div {
+		float: none;
+		width: 100%;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_technologies_selectors_container {
+		height: auto;
+		padding-bottom: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_technologies_selectors_container > div:nth-child(1),
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_technologies_selectors_container > div:nth-child(3) {
+		display: none;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_technologies_selectors_container > div {
+		float: none;
+		margin: auto !important;
+		width: 200px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_technologies_selectors_container > div.jackmail_dropdown_button_container {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_title {
+		display: block;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_grid_container div.jackmail_grid_header > div {
+		display: none;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_simplified_info_img {
+		display: none;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_monitoring .jackmail_grid_buttons {
+		padding-bottom: 0;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_monitoring .jackmail_grid_buttons .jackmail_left {
+		float: none !important;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_simplified_info_details > div > div:first-child,
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_simplified_info_details > div > div:last-child {
+		float: none;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_numbers {
+		margin-bottom: 0;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_graphic_container {
+		width: 100%;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_graphic_container > div {
+		float: none;
+		margin: auto;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_graphic_container > div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_statistics_technologies_graphics > div {
+		padding-bottom: 30px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_calendar_multiple_left,
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_calendar_multiple_right {
+		float: none;
+		width: auto;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_calendar_dropdown {
+		width: 196px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail .jackmail_grid_th {
+		display: none;
+	}
+
+	.jackmail_page_jackmail_statistics table, .jackmail_page_jackmail_statistics tbody {
+		display: block;
+	}
+
+	.jackmail_page_jackmail_statistics tr {
+		display: table;
+		width: 100%;
+		border-bottom: 1px solid #f3f4f8;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+	.jackmail_page_jackmail_statistics td {
+		display: table-row;
+		text-align: center;
+	}
+
+	.jackmail_page_jackmail_statistics td:before {
+		content: attr(data-headers);
+		display: table-cell;
+		width: 60%;
+		float: left;
+		padding: 4px;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_statistics_synthesis_more_actives_contacts_details td {
+		border: none;
+		color: black;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_statistics_grid_header_title {
+		text-align: center;
+		width: 100%;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_technologies_title {
+		text-align: center;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_grid_buttons_search .jackmail_grid_search_container > input {
+		position: relative;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_statistics_monitoring_search {
+		float: none !important;
+		text-align: center;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_grid_buttons_search .jackmail_grid_search_container {
+		width: auto;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_dropdown_button_container > div {
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.jackmail_page_jackmail_statistics .jackmail_technologies_selectors_container > div:nth-child(2) {
+		padding-bottom: 10px;
+	}
+}

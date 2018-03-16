@@ -1,0 +1,11 @@
+Jackmail is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version.
+
+Jackmail is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. (https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
+
+You should have received a copy of the GNU General Public License along with Jackmail. if not, write to the Free Software Foundation, Inc.
+
+The Jackmail WordPress plugin is distributed under the GPLv2 license.
+The « EmailBuilder » editor and its content are the sole and exclusive property of Sarbacane Software and its partners. It is distributed under the property license (Emailbuilder License). The source code of the EmailBuilder is not distributed with Jackmail.
+The terms « Jackmail », « EmailBuilder » and « Sarbacane Software » are registered Trademarks which are the property of Sarbacane Software. Using them without the consent of Sarbacane Software is prohibited.
+
+[See more](https://www.jackmail.com/terms-conditions)
