@@ -4987,6 +4987,10 @@
 	overflow: auto;
 }
 
+.jackmail email-builder .email-builder__article-text h3 {
+	color: white;
+}
+
 .jackmail #jackmail_emailbuilder_container {
 	overflow: hidden;
 }

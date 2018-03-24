@@ -4,7 +4,7 @@ Tags: newsletter, newsletters, emailing, mass mailing, autoresponder, post notif
 Requires at least: 4.0
 Tested up to: 4.9
 Requires PHP : 5.4
-Stable tag: 1.0.52
+Stable tag: 1.0.53
 License: GPLv2
 
 [NEW] Create and send responsive newsletter with a professional routing platform and a lot of features: automated emails and newsletters, statistics, email & Live Support etc.
@@ -158,6 +158,9 @@ Visit our [documentation](https://docs.jackmail.com).
 
 
 == Changelog ==
+
+= 1.0.53 =
+* Fix count contacts in list
 
 = 1.0.52 =
 * EmailBuilder Custom Post Type integration

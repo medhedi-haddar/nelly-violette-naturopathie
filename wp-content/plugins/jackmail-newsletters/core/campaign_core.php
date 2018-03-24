@@ -406,6 +406,8 @@ class Jackmail_Campaign_Core extends Jackmail_List_And_Campaign_Common_Core {
 						$content_email_html   = $content_email['content_email_html'];
 						$content_email_txt    = $content_email['content_email_txt'];
 						$content_email_images = $content_email['content_email_images'];
+						$nb_contacts          = $wpdb->get_var( "SELECT COUNT( * ) FROM `{$table_list_contacts}`" );
+						$nb_contacts_valids   = $wpdb->get_var( "SELECT COUNT( * ) FROM `{$table_list_contacts}` WHERE `blacklist` = '0'" );
 						$update_return        = $this->core->update_campaign( array(
 							'name'                       => $name,
 							'object'                     => $object,
@@ -418,6 +420,8 @@ class Jackmail_Campaign_Core extends Jackmail_List_And_Campaign_Common_Core {
 							'content_email_html'         => $content_email_html,
 							'content_email_txt'          => $content_email_txt,
 							'content_email_images'       => $content_email_images,
+							'nb_contacts'                => $nb_contacts,
+							'nb_contacts_valids'         => $nb_contacts_valids,
 							'send_option'                => $send_option,
 							'send_option_date_begin_gmt' => $send_option_date_begin_gmt,
 							'send_option_date_end_gmt'   => $send_option_date_end_gmt,

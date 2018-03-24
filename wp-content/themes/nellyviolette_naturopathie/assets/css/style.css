@@ -1,0 +1,521 @@
+@font-face {
+ font-family: "montserratBold";
+ src: url("fonts/Montserrat-Bold.otf");
+ font-weight: normal;
+}
+@font-face {
+ font-family: "montserratRegular";
+ src: url("fonts/Montserrat-Regular.otf") ;
+ font-weight:normal;
+}
+@font-face {
+ font-family: "montserratSemiBold";
+ src: url("fonts/Montserrat-SemiBold.otf") ;
+ font-weight:normal;
+}
+@font-face {
+ font-family: "montserratExtraBold";
+ src: url("fonts/Montserrat-ExtraBold.otf") ;
+ font-weight:normal;
+}
+@font-face {
+ font-family: "montserratExtraLight";
+ src: url("fonts/Montserrat-ExtraLight.otf") ;
+ font-weight:normal;
+}
+@font-face {
+ font-family: "montserratThin";
+ src: url("fonts/Montserrat-Thin.otf") ;
+ font-weight:normal;
+}
+@font-face {
+ font-family: "montserratMedium";
+ src: url("fonts/Montserrat-Medium.otf") ;
+ font-weight:normal;
+}
+.nav-link{
+    text-transform: uppercase;
+}
+div#approche-nelly::before{
+
+}
+ul{
+    padding:0px;
+}
+/* header style */
+#header{
+    margin-bottom: 15px;
+}
+.logo-nelly img{
+padding-top: 20px;
+}
+.menu-rapide{
+    font-family: 'montserratRegular';
+}
+.menu-rapide .nav-item a{
+    font-size: 12px;
+    color:black;
+}
+nav{
+    font-family: 'montserratSemiBold';
+}
+
+#intro{
+    background-image: url('../images/bg-2.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 195px;
+    padding-bottom: 135px;
+    color: white;
+    text-align: center;
+}
+
+#intro p{
+    font-size: 30px;
+}
+#approche-nelly #liste ul{
+    font-family: 'montserratExtraLight';
+    font-size: 30px;
+    list-style: none;
+}
+#approche-nelly #liste ul li{
+line-height: 51px;
+}
+#approche-nelly{
+    margin-top:170px;
+    background: #edeedd;
+    position: relative;
+    /* padding-top: 30px; */
+}
+.approche-title{
+    position: absolute;
+    top: -60px;
+}
+.mini-aside .title{
+    color:#c95b5c;
+    font-family:'montserratExtraBold'; 
+    font-size: 19px;
+}
+.mini-aside .conseil{
+    font-family: 'montserratBold';
+    font-size: 19px;
+}
+.mini-aside .thumbnail:first-child{
+    padding : 30px;
+    text-align: center;
+    position: relative;
+    /* top: -150px; */
+    padding-top: 220px;
+}
+.mini-aside .thumbnail:nth-child(2){
+    padding : 30px;
+    padding-bottom: 0px;
+    text-align: center; 
+    margin-top: 30px;
+}
+.mini-aside .thumbnail .footer{
+    position: absolute;
+    bottom: -25px;
+}
+.thumbnail .thumbnail-head{
+    position: absolute;
+    z-index: 10;
+    top: -112px;
+    width: 100%;
+    right: 0;
+}
+.contact{
+    margin-top: 100px;
+    background-color: #a5cdc4;
+    padding-bottom: 35px;
+}
+.contact .title h2{
+    font-family: "montserratExtraLight";
+    font-size: 45px;
+    text-transform: uppercase;
+    top: -55px;
+    position: relative;
+    text-align: center;
+}
+.contact a{
+    position: relative;
+    /* font-size: 20px; */
+    font-family: "montserratSemiBold";
+    color :black;
+}
+#telephone::before{
+    content: '';
+    background: url(../images/mobile.png);
+    background-repeat:no-repeat; 
+    background-size: 50px;
+    height: 60px;
+    width: 50px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-repeat: no-repeat;
+}
+#email::before{
+    content: '';
+    background: url(../images/adress.png);
+    background-repeat:no-repeat; 
+    background-size: 50px;
+    height: 60px;
+    width: 50px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-repeat: no-repeat;
+}
+#rdv::before{
+    content: '';
+    background: url(../images/calander.png);
+    background-repeat:no-repeat; 
+        background-size: 50px;
+    height: 60px;
+    width: 50px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+#question::before{
+    content: '';
+    background: url(../images/question.png);
+    background-repeat:no-repeat; 
+    background-size: 50px;
+    height: 60px;
+    width: 50px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+
+#naturopathie .description p:first-child{
+    font-family: "montserratBold";
+    font-size: 16px
+}
+#naturopathie .description p:nth-child(2){
+font-size: 15px;
+}
+#naturopathie .links .item{
+    color: white;
+    transition: all .5s;
+    margin: 0px 5px;
+    text-transform: uppercase;
+}
+#naturopathie .links .item span:first-child{
+    font-size: 60px;
+    font-family: 'montserratThin';
+    line-height: 65px;
+}
+#naturopathie .links .item span:last-child{
+    font-size: 20px;
+    font-family: 'montserratRegular';
+}
+#techniques{
+    padding: 30px 15px;
+        background-color: #70c4bc;
+}
+#principes{
+    padding:30px;
+    background-color: #013d44;
+}
+#profils{
+    padding: 30px 39px;
+    background-color: #6baa9b;
+}
+#besoins-specifique .title span:first-child{
+    font-size: 30px;
+    font-family: "montserratRegular";
+    color: #119c90;
+    text-transform: uppercase;
+}
+#besoins-specifique .title span:last-child{
+    font-size: 23px;
+    font-family: "montserratBold";
+    color: #119c90;
+    text-transform: uppercase;
+}
+#besoins-specifique .item .item-title{
+    font-family: "montserratExtraBold";
+    color: #119c90;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 30px;
+}
+#besoins-specifique p{
+    margin-top:25px;
+}
+#besoins-specifique .item a{
+position: relative;
+}
+#besoins-specifique .item .active::before{
+    background-position-x: -50px;
+}
+#besoins-specifique .item{
+    padding-top: 45px;
+    border-top: 1px solid #70c4bc;
+}
+.pour-quoi {
+    font-family: "montserratSemiBold";
+    font-size: 16px;
+    color:#66b242;
+}
+.comment {
+    font-family: "montserratSemiBold";
+    font-size: 16px;
+    color: #c95b5c;
+}
+.pour-quoi::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/pourquoi-picto.png);
+    background-repeat:no-repeat; 
+    position: absolute;
+    height: 50px;
+    margin: 0 19%;
+    top: -52px;
+    text-align: center;
+    width: 51px;
+    background-size: 100px;
+}
+.comment::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/comment-picto.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    height: 50px;
+    margin: 0 19%;
+    top: -52px;
+    text-align: center;
+    width: 51px;
+    background-size: 100px;
+}
+ 
+#requilibre::before{
+    content: '';
+    background-image: url('../images/picto-alimentation.png');
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: -120px;
+    left: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 100px auto;
+}
+#combattre::before{
+    content: '';
+    background-image: url('../images/picto-combattre.png');
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    top: -120px;
+    left: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 100px auto;
+}
+#traitement::before{
+    content: '';
+    background-image: url('../images/picto-traitement.png');
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: -120px;
+    left: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 100px auto;
+}
+#sante::before{
+    content: '';
+    background-image: url('../images/picto-sante.png');
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: -120px;
+    left: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 100px auto;
+}
+.section{
+    margin-bottom: 60px;
+}
+.section .section-title{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'montserratExtraLight';
+}
+footer{
+    background-color: #936a50;
+    padding-top: 55px;
+       color:white;
+}
+footer ul li a{
+    color:white;
+}
+footer ul li{
+    list-style: none;
+}
+footer form{
+    display: flex;
+    flex-direction: row;  
+}
+footer form input{
+ border: 1px solid white;
+}
+footer form button{
+    border: 1px solid white;
+    background: #b3d344;
+    color: white;
+    padding: 4px 15px;
+}
+footer form button:hover{
+    background: #7e9333;
+}
+footer h3{
+    font-family: "montserratMedium";
+    font-size: 13px;
+    text-transform: uppercase;
+}
+footer p{
+    font-family: "montserratRegular";
+    font-size: 13px;
+}
+footer #copyright{
+    font-size: 11px;
+}
+footer #end{
+    padding: 30px 0 20px 0;
+}
+.reseaux-social a{
+    font-size: 12px;
+}
+/* 
+*
+*
+*
+ button style */
+.btn-cadre:hover{
+    background: #b3d344;
+}
+
+.btn-cadre{
+    margin: auto 15px;
+    background: transparent;
+    border-radius: 0;
+    border: 2px solid white;
+    color: white;
+}
+.btn-green-cadre:hover{
+    background:#678b8f;
+}
+.btn-green-cadre{
+    margin: auto 15px;
+    background: #b3d344;
+    border-radius: 0;
+    border: 2px solid white;
+    color: white;
+}
+.btn-cadre-dark{
+    border: 1px solid black;
+    border-radius: 0px;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.btn-green:hover{
+     background:#678b8f;
+}
+.btn-green{
+    margin: auto 15px;
+    background: #119c90;
+    border-radius: 0;
+    color: white;
+}
+.btn-red{
+ background: #c95b5c;
+    color: white;
+    border-radius: 0px;
+}
+.btn{
+    transition: all .5s;
+    font-family: 'montserratBold';
+}
+.btn-l{
+    font-size: 16px;
+    padding:20px 35px;
+}
+.btn-m{
+font-size: 14px;
+padding:18px 21px;
+}
+.t-uppercase{
+    text-transform: uppercase;
+}
+
+.menu-rapide a{
+    position: relative;
+    padding-right: 31px;
+    line-height: 25px;
+}
+#recherche-menu::before{
+    content: '';
+    background-image: url(../images/recherche_s.png);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+}
+#recherche-menu:hover::before{
+    transition: all .7s;
+    background-image: url(../images/recherche_s_hover.png);
+}
+#question-menu::before{
+    content: '';
+    background-image: url(../images/question_s.png);
+    height: 25px;
+    width: 26px;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+}
+#question-menu:hover::before{
+    transition: all .7s;
+    background-image: url(../images/question_s_hover.png);
+}
+.block-text p{
+    font-family: "montserratRegular";
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.block-text .subtitle{
+    text-transform: uppercase; 
+    font-family: "montserratBold";
+    font-size: 16px;
+    color:#119c90;
+}
+#point-fort .item:first-child{
+    margin-top:80px;
+}
+#point-fort span{
+    font-family: "montserratThin";
+    font-size: 50px;
+    position: absolute;
+    top: -70px;
+    color:#119c90;
+}
+#point-fort p{
+    border-top: 1px solid #119c90;
+    padding-top: 15px;
+    font-size: 13px;
+}
